@@ -1,0 +1,399 @@
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-light .navbar-nav .active > .nav-link {
+  color: white;
+}
+
+.navbar-light .navbar-brand {
+  color: gold;
+}
+
+.carousel-caption {
+  margin-bottom: 300px;
+}
+
+.bannerpara {
+  display: inline-block;
+  padding: 20px;
+  background-color: #fed136;
+}
+
+.bannerpara > a {
+  color: white;
+  text-decoration: none;
+}
+
+.d-block {
+  filter: brightness(0.5);
+}
+
+.services-title {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.services-selection {
+  padding-top: 100px;
+}
+
+.iconbasket {
+  border: solid;
+  color: gold;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.iconlaptop {
+  border: solid;
+  color: gold;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.iconlocked {
+  border: solid;
+  color: gold;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.services-icon {
+  text-align: center;
+}
+
+.services-description {
+  text-align: center;
+  padding-bottom: 200px;
+}
+
+.portfolio-title {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.portfolio-description {
+  text-align: center;
+  padding-top: 20px;
+  border: solid;
+  color: white;
+  background-color: white;
+  margin-bottom: 100px;
+}
+
+.portfolio-icon {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+.iconportfolio2 {
+  padding-top: 40px;
+  display: inline-block;
+  width: 100%;
+}
+
+#portfolio {
+  background-color: #eae7e7;
+}
+
+#ebony {
+  color: black;
+}
+
+#ebony {
+  color: gray;
+}
+
+#smart {
+  color: black;
+}
+
+#smart1 {
+  color: gray;
+}
+
+#clever {
+  color: black;
+}
+
+#clever1 {
+  color: gray;
+}
+
+#vinyl {
+  color: black;
+}
+
+#vinyl1 {
+  color: gray;
+}
+
+#tree {
+  color: black;
+}
+
+#tree1 {
+  color: gray;
+}
+
+#burned {
+  color: black;
+}
+
+#burned1 {
+  color: gray;
+}
+
+#ecom {
+  padding-top: 10px;
+}
+
+#res {
+  padding-top: 10px;
+}
+
+#web {
+  padding-top: 10px;
+}
+
+.about-title {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#contact {
+  background-image: url(img/mapwhole.gif);
+}
+.contact-title {
+  color: white;
+}
+.contactpara {
+  color: gray;
+}
+.img5 {
+  padding-bottom: 100px;
+}
+.teampara {
+  padding-bottom: 100px;
+  padding-top: 50px;
+  color: gray;
+}
+#negfooter {
+  padding-top: 100px;
+  padding-bottom: 100px;
+    text-align: center;
+}
+
+#sendbtn {
+  text-align: center;
+  padding-bottom: 100px;
+  padding-top: 50px;
+}
+#btnContactUs {
+  background-color: gold;
+  padding: 20px 60px;
+  margin-top: -30px;
+}
+.social-icons {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  padding-left: 80px;
+    justify-content: center;
+}
+
+#footer {
+  margin-top: 30px;
+}
+.col-lg-4 {
+  text-align: center;
+}
+.order-md-1 {
+  text-align: right;
+}
+.image1 {
+  position: relative;
+}
+.image2 {
+  padding-top: 70px;
+  padding-right: 60px;
+}
+.featurette-heading1 {
+  padding-top: 70px;
+}
+.image3 {
+  padding-left: 20px;
+}
+.image4 {
+  padding-top: 70px;
+  padding-right: 50px;
+}
+.featurette-heading3 {
+  padding-top: 70px;
+}
+.col-md-12 {
+  text-align: center;
+}
+.image5 {
+  padding-top: 43px;
+  padding-left: 80px;
+  padding-bottom: 50px;
+  display: inline-block;
+}
+.team-name {
+  padding-top: 50px;
+}
+.designation {
+  color: gray;
+}
+.v-line {
+  border: 1px solid #000;
+  position: absolute;
+  height: 90px;
+}
+#v-line1 {
+  left: 110px;
+}
+#v-line2 {
+  left: 590px;
+}
+#v-line3 {
+  left: 120px;
+}
+#v-line4 {
+  left: 600px;
+}
+#our-team {
+  background-color: #eae7e7;
+}
+#footer-form {
+  justify-content: center;
+}
+.form-control {
+  line-height: 2.5;
+}
+.about-icon {
+  text-decoration: none;
+  list-style: none;
+  display: inline-flex;
+        margin-left: -50px;
+}
+.imgtwitter {
+  border: 2px solid #000;
+  padding: 10px;
+  border-radius: 100%;
+}
+.imgfacebook {
+  border: 2px solid #000;
+  padding: 10px;
+  border-radius: 100%;
+}
+.imgpinterest {
+  border: 2px solid #000;
+  padding: 10px;
+  border-radius: 100%;
+}
+.imggoogle {
+  border: 2px solid #000;
+  padding: 10px;
+  border-radius: 100%;
+}
+.imgtwitter:hover {
+  background-color: #00aced;
+}
+.imgfacebook:hover {
+  background-color: #3b5998;
+}
+.imggoogle:hover {
+  background-color: #d95232;
+}
+.imgpinterest:hover {
+  background-color: #cb2028;
+}
+img.iconportfolio {
+  display: inline-block;
+  width: 100%;
+}
+
+@media screen and (max-width: 1201px) {
+  .v-line {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .iconbasket {
+    margin-top: -50px;
+  }
+  .services-description {
+    padding-bottom: 0px;
+  }
+    .image5 {
+    padding-top: 43px;
+    padding-bottom: 50px;
+    display: inline-block;
+            padding-left: 0px;
+        margin-right: 100px;
+           
+}
+    .image4 {
+    padding-top: 0px;
+    padding-right: 0px;
+        padding-bottom: 50px;
+}
+    .social-icons {
+        justify-content: center;
+        padding-left: 0px;
+    }
+    #negfooter {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        text-align: center;
+    }
+    #negfooter img {
+        padding: 10px;
+    }
+    .image2 {
+    padding-top: 0px;
+    padding-right: 0px;
+        padding-bottom: 60px;
+   
+    }
+
+ 
+    }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #classcss {
+        margin-left: 25%;
+    }
+    #classcss1 {
+        margin-left: 25%;
+    }
+    #classcss2 {
+        margin-left: 25%;
+        margin-top: -15%
+    }
+       
+       
+        }
+@media (min-width: 991.98px) {
+    
+    .carousel-caption {
+    margin-bottom:0px;
+}
+}
+    @media screen and (max-width: 991.98px) {
+        
+         .navbar-toggler {
+    color: rgba(0,0,0,.5);
+    border-color: rgba(0,0,0,.1);
+    background-color: gold;
+    
+    }
+    }
+.about-icon li {
+    margin: 5px
+}
