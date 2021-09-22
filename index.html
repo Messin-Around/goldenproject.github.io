@@ -1,534 +1,339 @@
-<!DOCTYPE html>
-<html>
-
-<head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title> GOLDEN</title>
+    <!-- Bootstrap CSS, here i am using bootstar via CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <!-- font-awesome CSS, here i am using font-qwesome via CDN -->
+      <link href="./fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
 
-</head>
+      <link href="./style.css" rel="stylesheet">
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Golden</a>
+    <title>Assignment</title>
+  </head>
+  <body>
+   <!-- Header start -->
+    <header id="header-fixed">
+        <div class="header-top">
+          <a href=""><img src="./img/Vector.png" alt=""> 01-8245101 | Contact</a>
+          <a href="">Track my order</a>
+        </div>
+        <div class="header-mid">
+            <a href="">Logo</a>
+
+            <div class="search-wrapper">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                      <button id="button-search"  class="btn btn-link"><i class="fa fa-search"></i></button>
+                    </div>
+                    <input type="search" placeholder="Enter keywords to search" aria-describedby="button-search" class="form-control border-0 bg-light">
+                    <button class="search-button">Search</button>
+                  </div>
+            </div>
+
+            <div class="button-wrapper">
+                <a href="#" class="link-login"><span><i class="fas fa-user"></i></span> Login</a>
+                <a href="#"><img src="./img/wishlist.png" alt=""> Wishlist</a>
+                <a href="#"><img src="./img/cart.png" alt=""> Cart</a>
+            </div>
+        </div>
+       
+    </header>
+    <header id="header-category">
+        <div class="header-inner">
+            <ul>
+                <li>
+                    <div class="dropdown">
+                        <button class="btn btn-dropdown_header dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            ALL CATEGORIES
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Options</a>
+                          <a class="dropdown-item" href="#">Options</a>
+                          <a class="dropdown-item" href="#">Options</a>
+                        </div>
+                      </div>
+                </li>
+                <li>
+                    <a href="#">NEW ARRIVALS</a>
+                </li>
+                <li>
+                    <a href="#">ABOUT US</a>
+                </li>
+                <li>
+                    <a href="#">TECH DEALS</a>
+                </li>
+                <li>
+                    <a href="#">CUSTOM PC BUILDER</a>
+                </li>
+            </ul>
+            
+        </div>
+    </header>
+
+     <!-- Header End -->
+
+
+      <!-- Main section start  -->
+
+    <main>
+     <section>
+         <div class="container">
+             <div class="personal-info_wrapper">
+                 <div class="floating-text">
+                     <span>Personal<br>Information</span>
+                 </div>
+                 <label for="">
+                     <span>First Name</span>
+                     <input type="text" placeholder="First Name">
+                 </label>
+                 <label for="">
+                    <span>Last Name</span>
+                    <input type="text" placeholder="Last Name">
+                </label>
+                <label for="" class="agree-signup">
+                    <input type="checkbox">
+                    <span>Sign Up for News letter</span>     
+                </label>
+             </div>
+
+
+             <div class="create-acc_wrapper">
+                <div class="floating-text">
+                    <span>Create an<br>Acccount</span>
+                </div>
+                 <p>If you already have an account, sign in with your email address</p>
+                 <label for="">
+                    <span>Email <span>*</span></span>
+                    <input type="email" placeholder="Email">
+                 </label>
+                 <label for="">
+                   <span>Password <span>*</span></span>
+                   <input type="password" placeholder="Password">
+                 </label>
+
+                 <label for="">
+                    <span>Confirm Password <span>*</span></span>
+                    <input type="password" placeholder="Confirm Password ">
+                  </label>
+
+                  <div class="floating-div">
+                      <a href="">
+                          Create account
+                      </a>
+                      <span>Already have an account? <a href="">Sign In</a></span>
+                  </div>
+             
+            </div>
+         </div>
+     </section>
+
+     <section class="mobile-nav">
+       <div class="">
+            
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
             </button>
-
+          
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">SERVICES</a>
-                    </li>
+              <ul class="navbar-nav mr-auto">
+           
+                <li class="nav-item dropdown">
+                    <div class="dropdown">
+                        <button class="btn btn-dropdown_header dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Dropdown button
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Options</a>
+                          <a class="dropdown-item" href="#">Options</a>
+                          <a class="dropdown-item" href="#">Options</a>
+                        </div>
+                      </div>
+                  </li>
+                
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">NEW ARRIVALS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#"  class="nav-link">TECH DEALS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link disabled">CUSTOM PC BUILDER</a>
+                </li>
+              </ul>
+             
+            </div>
+          </nav>
+           <a href="#"  class="link-login"><span><i class="fas fa-user"></i></span></a>
+           <a href="#"><img src="./img/wishlist.png" alt="wishlist"></a>
+           <a href="#"><img src="./img/cart.png" alt="cart"></a>
+       </div>
+     </section>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">PORTFOLIO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACT</a>
-                    </li>
+    </main>
 
+     <!-- Main section end  -->
+
+       <!-- Footer start  -->
+
+    <footer>
+        <div class="footer-search">
+            <div class="newsletter-before-wrapper">Logo</div>
+            <div class="newsletter-wrapper">
+              <div class="floating-text_footer">
+                  <span>Our Newsletter</span>
+              </div> 
+              <p>Subscribe to our newsletter to get updates on our latest offer!</p>
+              <div class="subscribe-wrapper">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                      <button id="button-subscribe" type="submit" class="btn btn-link"><i class="far fa-envelope"></i></button>
+                    </div>
+                    <input type="search" placeholder="Enter your E-mail Address" aria-describedby="button-submit" class="form-control border-0 bg-light">
+                    <button class="subscribe-button">Subscribe</button>
+                  </div>
+                </div>
+            </div>
+            <div class="">
+                <p>Logo App</p>
+                <span>Coming Soon on</span>
+                <div class="app-store-wrapper">
+                    <a href=""><img src="./img/Vector1.png" alt=""> Google play</a>
+                    <a href=""><img src="./img/Vector2.png" alt=""> App store</a>
+                </div>
+            </div>
+
+         
+        </div>
+        <div class="row col-grids">
+            <div class="col-md-3">
+                <span>Categories</span>
+                <ul>
+                    <li>
+                        Gaming Laptops
+                    </li>
+                    <li>
+                        Monitors
+                    </li>
+                    <li>
+                        Desktop Computers
+                    </li>
+                    <li>
+                        Accesories
+                    </li>
 
                 </ul>
+            </div>
+            <div class="col-md-3">
+                <span>About</span>
+                <ul>
+                    <li>
+                        About us
+                    </li>
+                    <li>
+                        Terms & Conditions
+                    </li>
+                    <li>
+                        Warranty
+                    </li>
+                    <li>
+                        Blogs
+                    </li>
 
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <span>Customer Service</span>
+                <ul>
+                    <li>
+                        Shipping & Return Policy
+                    </li>
+                    <li>
+                        My Account
+                    </li>
+                    <li>
+                        Contact Us
+                    </li>
+                   
+
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <span>Support</span>
+                <ul>
+                    <li>
+                       <img src="./img/message.png" alt=""> main@lorem.com.np
+                    </li>
+                    <li>
+                       <img src="./img/call.png" alt=""> +977-981051248
+                    </li>
+                    <li>
+                       <img src="./img/location.png" alt=""> Trinity House, Putalisadak, Kathmandu
+                    </li>
+                </ul>
             </div>
         </div>
-    </nav>
-
-
-    <div id="containerimg" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img/Container.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-lg-block">
-                    <h3>Welcome To Our Studio</h3>
-                    <h1>IT'S NICE TO MEET YOU</h1>
-                    <p class="bannerpara"><a href="#">TELL ME MORE</a></p>
+        <div class="footer-top">
+            <div class="follow-left">
+                <p>Follow us on</p>
+                <div class="">
+                   <a href=""><img src="./img/Vector7.png" alt=""></a>
+                   <a href=""><img src="./img/Vector7.png" alt=""></a>
+                   <a href=""><img src="./img/Vector7.png" alt=""></a>
+                   <a href=""><img src="./img/Vector7.png" alt=""></a>
+                   <a href=""><img src="./img/Vector7.png" alt=""></a>
                 </div>
             </div>
 
-
-        </div>
-    </div>
-
-    <section id="services">
-
-        <div class="container">
-            <div class="services-title">
-                <h1>SERVICES</h1>
-                <p>proin iaculis purus consequant sem cure</p>
-            </div>
-            <div class="services-detail">
-                <div class="row">
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="services-selection">
-                            <div class="services-icon">
-                                <img src="img/Icon-Basket.png" class="iconbasket">
-
-                            </div>
-                            <div class="services-description">
-                                <h4 id="ecom"> E-Commerce</h4>
-                                <p>Proin iaculis purus consequat sem cure
-                                    digni ssim. Donec porttitora entum suscipit
-                                    aenean rhoncus posuere odio in tincidunt.</p>
-                            </div>
-
-
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="services-selection">
-                            <div class="services-icon">
-                                <img src="img/Icon-Laptop.png" class="iconlaptop">
-
-                            </div>
-                            <div class="services-description">
-                                <h4 id="res"> RESPONSIVE WEB</h4>
-                                <p>Proin iaculis purus consequat sem cure
-                                    digni ssim. Donec porttitora entum suscipit
-                                    aenean rhoncus posuere odio in tincidunt.</p>
-
-                            </div>
-
-
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6" id="classcss2" >
-                        <div class="services-selection">
-                            <div class="services-icon">
-                                <img src="img/Icon-Locked.png" class="iconlocked">
-
-                            </div>
-                            <div class="services-description">
-                                <h4 id="web">WEB SECURITY</h4>
-                                <p>Proin iaculis purus consequat sem cure
-                                    digni ssim. Donec porttitora entum suscipit
-                                    aenean rhoncus posuere odio in tincidunt.</p>
-
-
-                            </div>
-
-
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <section id="portfolio">
-        <div class="container">
-            <div class="portfolio-title">
-                <h1>OUR PORTFOLIO</h1>
-                <p>proin iaculis purus consequant sem cure</p>
-            </div>
-            <div class="services-detail">
-                <div class="row">
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="portfolio-selection">
-                            <div class="portfolio-icon">
-                                <img src="img/portfolio1.jpg" class="iconportfolio">
-
-                            </div>
-                            <div class="portfolio-description">
-                                <h4 id="ebony"> Ebony & Ivory</h4>
-                                <p id="ebony1">Branding.</p>
-                            </div>
-
-
-                        </div>
-                    </div>
-
-
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="portfolio-selection">
-                            <div class="portfolio-icon">
-                                <img src="img/portfolio2.jpg" class="iconportfolio">
-
-                            </div>
-                            <div class="portfolio-description">
-                                <h4 id="smart"> Smart Stationary</h4>
-                                <p id="smart1">Print Design.</p>
-                            </div>
-
-
-                        </div>
-                    </div>
-
-
-
-
-                    <div class="col-lg-4 col-md-6" id="classcss">
-                        <div class="portfolio-selection">
-                            <div class="portfolio-icon">
-                                <img src="img/portfolio3.jpg" class="iconportfolio">
-
-                            </div>
-                            <div class="portfolio-description">
-                                <h4 id="clever">Clever Poster</h4>
-                                <p id="clever1">Print Design</p>
-                            </div>
-
-
-                        </div>
-                    </div>
-
-                </div>
-
-
-
-
-                <div class="row">
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="portfolio-selection">
-                            <div class="portfolio-icon">
-                                <img src="img/portfolio4.jpg" class="iconportfolio2">
-
-                            </div>
-                            <div class="portfolio-description">
-                                <h4 id="vinyl">Vinyl Record</h4>
-                                <p id="vinyl1">Product Mock-Up</p>
-                            </div>
-
-
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="portfolio-selection">
-                            <div class="portfolio-icon">
-                                <img src="img/portfolio5.jpg" class="iconportfolio2">
-
-                            </div>
-                            <div class="portfolio-description">
-                                <h4 id="tree">Treehouse Template</h4>
-                                <p id="tree1">Web Design</p>
-                            </div>
-
-
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6" id="classcss1">
-                        <div class="portfolio-selection">
-                            <div class="portfolio-icon">
-                                <img src="img/portfolio6.jpg" class="iconportfolio2">
-
-                            </div>
-                            <div class="portfolio-description">
-                                <h4 id="burned">Burned Logo</h4>
-                                <p id="burned1">Branding</p>
-                            </div>
-
-
-                        </div>
-                    </div>
-
-
+            <div class="follow-right">
+                <p>Payment and Delivery partners</p>
+                <div class="">
+                   <a href=""><img src="./img/pngfind.png" alt=""></a>
+                   <a href=""><img src="./img/kisspng-esewa-fonepay-pvt-ltd-logo-portable-network-grap-index-of-inheadline-public-assets-uploads-newsup-5b6df612161f19.png" alt=""></a>
+                   <a href=""><img src="./img/main-logo.png" alt=""></a>
+                   <a href=""><img src="./img/Vector12.png" alt=""></a>
                 </div>
             </div>
         </div>
-    </section>
 
+        <div class="footer-mid">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant convallis lectus magna hendrerit sagittis, proin turpis sem. Tortor tincidunt morbi elit fermentum quis. Tellus quam ut blandit euismod et sed. Amet tristique amet, ac scelerisque ut cras turpis ornare. Ultrices et augue hac tincidunt pretium, scelerisque elementum. Donec non vitae id commodo arcu. Facilisis est mi platea nec tortor, risus, in convallis id. Vestibulum lorem quis pulvinar egestas. Massa non facilisis tellus faucibus amet, nisl imperdiet nisi. Praesent ultrices volutpat sit blandit aenean ut sapien.</p>
 
-    <section id="about">
-        <div class="container">
-            <div class="about-title">
-                <h1>ABOUT US</h1>
-                <p>proin iaculis purus consequant sem cure</p>
-            </div>
-
-
-            <div class="row featurette">
-                <div class="col-md-5">
-                    <h4 class="featurette-heading">July 2010
-                        Our Humble Beginnings. </h4>
-                    <p class="lead">Proin iaculis purus consequat sem cure
-                        digni ssim. Donec porttitora entum suscipit
-                        aenean rhoncus posuere odio in tincidunt. Proin
-                        iaculis purus consequat sem cure digni
-                        ssim. Donec porttitora entum suscipit..</p>
-                </div>
-                <div class="col-md-3">
-                    <img src="img/about1.jpg" class="image1">
-                    <div class="v-line" id="v-line1"></div>
-                </div>
-            </div>
-
-            <div class="row featurette">
-                <div class="col-md-4 order-md-2">
-                    <h4 class="featurette-heading1">January 2011
-                        Facing Startup Battles.</h4>
-                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-                </div>
-                <div class="col-md-8 order-md-1">
-                    <img src="img/about2.jpg" class="image2">
-                    <div class="v-line" id="v-line2"></div>
-                </div>
-            </div>
-
-            <div class="row featurette">
-                <div class="col-md-5">
-                    <h4 class="featurette-heading">December 2012
-                        Enter The Dark Days </h4>
-                    <p class="lead">Proin iaculis purus consequat sem cure
-                        digni ssim. Donec porttitora entum suscipit
-                        aenean rhoncus posuere odio in tincidunt. Proin
-                        iaculis purus consequat sem cure digni.</p>
-                </div>
-                <div class="col-md-3">
-                    <img src="img/about3.jpg" class="image3">
-                    <div class="v-line" id="v-line3"></div>
-                </div>
-            </div>
-
-            <div class="row featurette">
-                <div class="col-md-4 order-md-2">
-                    <h4 class="featurette-heading3">february 2014
-                        Our Triumph</h4>
-                    <p class="lead">Proin iaculis purus consequat sem cure
-                        digni ssim. Donec porttitora entum suscipit
-                        aenean rhoncus posuere odio in tincidunt. Proin
-                        iaculis purus consequat sem cure digni
-                        ssim. Donec porttitora entum suscipit aenean.</p>
-                </div>
-                <div class="col-md-8 order-md-1">
-                    <img src="img/about4.jpg" class="image4">
-                    <div class="v-line" id="v-line4"></div>
-                </div>
-            </div>
-            <div class="col-md-12">
-                <img src="img/ourstory.jpg" class="image5">
-            </div>
-
+               <p> Ultricies augue ac ornare non. Mi faucibus varius condimentum potenti felis amet. Enim pulvinar nam lectus sed tellus sed viverra. Nec magna mattis egestas nisl cursus quam sit. Lobortis elit ac semper netus.</p>
+                
+                <p>Egestas mollis ultrices scelerisque ipsum lorem velit nibh quam ac. Erat sit et egestas quis fames. Id fames adipiscing porttitor ullamcorper sit massa. Sollicitudin facilisis odio faucibus neque. Nulla sit vel tortor, nunc vestibulum volutpat blandit vel. Lacus, a imperdiet elit, vulputate egestas eget ultricies sed. Ac sit pulvinar cursus tempor enim. Nulla viverra ac malesuada ipsum. Augue sed id imperdiet auctor. Pellentesque nullam vitae, sagittis eleifend rhoncus lobortis at maecenas et. Vel nec, at ac arcu magna massa. Dui faucibus lectus integer at in convallis donec sit. Nunc dapibus commodo egestas lobortis a.</p>
         </div>
-    </section>
-    
-            <section id="our-team">
-                <div class="container">
-                    <div class="about-title">
-                        <h1>OUR AMAZING TEAM</h1>
-                        <p>proin iaculis purus consequant sem cure</p>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <img src="img/team1.jpg">
-                            <h4 class="team-name">Kimberly Thompson</h4>
-                            <p class="designation">Marketer</p>
-                            <ul class="about-icon">
-                                <li> <a href="#"><img src="img/aboutTwitter.png" class="imgtwitter"></a> </li>
-                                <li> <a href="#"><img src="img/Facebook.png" class="imgfacebook"></a> </li>
-                                <li> <a href="#"><img src="img/Pinterest.png" class="imgpinterest"></a> </li>
-                            </ul>
 
-                        </div>
-
-                        <div class="col-lg-4">
-                            <img src="img/team1.jpg">
-                            <h4 class="team-name">Rico Masimo</h4>
-                            <p class="designation">Coder</p>
-                            <ul class="about-icon">
-                                <li> <a href="#"><img src="img/aboutTwitter.png" class="imgtwitter"></a> </li>
-                                <li> <a href="#"><img src="img/Facebook.png" class="imgfacebook"></a> </li>
-                                <li> <a href="#"><img src="img/aboutGoogle+.png" class="imggoogle"></a> </li>
-                            </ul>
-
-                        </div>
-
-                        <div class="col-lg-4">
-                            <img src="img/team1.jpg">
-                            <h4 class="team-name">Uku Mason</h4>
-                            <p class="designation">Graphic Designer</p>
-                            <ul class="about-icon">
-                                <li> <a href="#"><img src="img/Facebook.png" class="imgfacebook"></a> </li>
-                                <li> <a href="#"><img src="img/Pinterest.png" class="imgpinterest"></a> </li>
-                            </ul>
-
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-12">
-
-                            <p class="teampara"> Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit<br>aenean rhoncus posuere odio in tincidunt proin iaculis.</p>
-                        </div>
-
-                    </div>
-
-
-
-                </div>
-
-
-            </section>
-
-            <section id="negfooter">
-                <div class="container">
-
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6">
-                            <img src="img/envato.jpg">
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <img src="img/WordPress.jpg">
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <img src="img/Tuts+.jpg">
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <img src="img/Microlancer%20copy.jpg">
-                        </div>
-
-
-
-
-                    </div>
-
-
-                </div>
-
-
-
-            </section>
-
-            <section id="contact">
-                <div class="container">
-                    <div class="about-title">
-                        <h1 class="contact-title">CONTACT US</h1>
-                        <p class="contactpara">proin iaculis purus consequant sem cure</p>
-                    </div>
-
-
-                    <div class="row" id="footer-form">
-                        <div class="col-md-12">
-                            <div class="well well-sm">
-                                <form>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group" id="enter-name">
-                                                <label for="name">
-                                                    Name</label>
-                                                <input type="text" class="form-control" cols="50"  id="name" placeholder="Enter name" required="required" />
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="email">
-                                                    Email Address</label>
-                                                <div class="input-group">
-                                                    <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
-                                                    </span>
-                                                    <input type="email" class="form-control" cols="50"  id="email" placeholder="Enter email" required="required" />
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label for="subject">
-                                                    SUbject</label>
-                                                <div class="input-group">
-                                                    <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
-                                                    </span>
-                                                    <input type="subject" class="form-control" cols="50"  id="email" placeholder="Subject" required="required" />
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="name">
-                                                    Message</label>
-                                                <textarea name="message" id="message" class="form-control" rows="6" cols="50" required="required" placeholder="Message"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12" id="sendbtn">
-                                            <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
-                                                Send Message</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-
-                </div>
-
-
-
-            </section>
-
-
-            <section id="footer">
-                <div class="container">
-
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <p class="footerpara">@Copyright 2014 FreebiesXpress.com</p>
-                        </div>
-                        <div class="col-lg-6">
-                            <ul class="social-icons">
-                                <li><a href="#"><img src="img/footertwitter.jpg" alt="twitter"></a></li>
-                                <li><a href="#"><img src="img/footerfacebook.jpg" alt="facebook"></a></li>
-                                <li><a href="#"><img src="img/footerpenterest.jpg" alt="pinterest"></a></li>
-                                <li><a href="#"><img src="img/footergoogle.jpg" alt="google"></a></li>
-
-
-                            </ul>
-
-
-
-
-                        </div>
-
-
-
-                    </div>
-
-
-
-
-
-
-                </div>
-
-
-
-
-
-
-            </section>
-
-
-    
-
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-
-
-
-</body>
-
+        <div class="services-accessories">
+            <p>Gaming Laptop | Desktop Computers | Smart TV | Mobile Phones | Accessories | Ultra Book | Notebook | 2 in 1 Laptops | Upcoming Laptops | Monitors | Acer | Apple | Alienware | Asus | Razerblade | Asus | Dell | HP | Lenovo | Microsoft | MSI</p>
+        </div>
+
+        <div class="footer-inner">
+            <div class="">
+                <img src="./img/Vector6.png" alt="">
+                <span>2021 LOGO. All rights reserved.</span>
+            </div>
+            <div class="">
+                <span>Privacy Policy</span>
+                <span>Terms of use</span>
+                <span>Site map</span>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end  -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>
