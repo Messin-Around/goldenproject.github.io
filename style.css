@@ -65,16 +65,16 @@ header button {
     margin-right: 18px;
 }
 .glow {
-    animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in infinite alternate;
   }
   
   @-webkit-keyframes glow {
     from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #BE202E, 0 0 30px #BE202E, 0 0 10px #BE202E, 0 0 10px #BE202E, 0 0 10px #BE202E, 0 0 10px #BE202E;
+      text-shadow: 0 0 10px #fff, 0 0 10px #BE202E, 0 0 10px #BE202E, 0 0 10px #BE202E, 0 0 10px #BE202E, 0 0 10px #BE202E, 0 0 10px #BE202E;
     }
     
     to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #BE202E, 0 0 40px #BE202E, 0 0 50px #BE202E, 0 0 60px #BE202E, 0 0 10px #BE202E, 0 0 10px #BE202E;
+      text-shadow: 0 0 20px #fff, 0 0 30px #BE202E, 0 0 40px #BE202E, 0 0 50px #BE202E, 0 0 60px #BE202E, 0 0 70px #BE202E, 0 0 80px #BE202E;
     }
   }
 .button-wrapper {
@@ -1404,4 +1404,30 @@ color: #828282;
 a.blogReadMore {
     color: #fff;
 }
- 
+.parallax {
+    /* The image used */
+   
+    background-image: url('./img/pexels-vidal-balielo-jr-2337818.jpg');
+  
+    /* Full height */
+    height: 100%; 
+    min-height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .parallax1 {
+    /* The image used */
+    background-image: url('./img/pexels-jill-wellington-433527.jpg');
+  
+    /* Full height */
+    height: 100%; 
+    min-height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
