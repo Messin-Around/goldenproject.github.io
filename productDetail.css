@@ -47,6 +47,7 @@ a:hover {
   .mySlides img {
     width: 462px;
     height: 262px;
+    border-radius: 10px;
   }
   .productDetail .column>img {
     width: 78px;
