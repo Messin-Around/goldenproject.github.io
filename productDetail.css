@@ -244,7 +244,8 @@ a:hover {
   font-size: 22px;
   line-height: 24px;
   padding: 12px;
-  border: 1px solid #008C26;
+  border: 3px solid #008C26;
+  border-radius: 10px;
 }
 .productPrice-compare>p {
   font-weight: 300;
