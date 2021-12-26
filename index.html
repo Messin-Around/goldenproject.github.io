@@ -1,1738 +1,1650 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Trekking Site</title>
+   <meta charset="UTF-8">
+   <title>tour and travel</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="./customStyle.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
 </head>
-
-<body>
-  <style>
-    .trip_btn i {
-    color: #fff;
-    border: 2px solid #fff;
-    padding: 2px 6px;
-    border-radius: 50%;
-    margin-left: 4px;
-    }
-    #footer{
-    position:relative;
-    color:#424242;
-    font-weight:400;
-    font-size:.9375rem;
-    background: #f8f9fa!important;
-    background-size:100%;
-    z-index:0
-}
-@media (max-width:767.98px){
-    #footer .container-fluid{
-        padding-right:15px;
-        padding-left:15px
-    }
-}
-#footer a{
-    text-decoration:none
-}
-#footer .common-module .module-title{
-    font-size:1.25rem;
-    margin-bottom:15px;
-    font-weight:700;
-    color:#424242;
-    position:relative
-}
-#footer .pay-online-link{
-    padding:10px 0 30px
-}
-#footer .pay-online-link h4{
-    margin-bottom:0;
-    font-size:.875rem;
-    color:#4f4f51;
-    text-transform:uppercase;
-    color:#4f4f51;
-    font-weight:700
-}
-#footer .pay-online-link .icon-wrap img{
-    margin-top:5px
-}
-@media (max-width:767.98px){
-    #footer .pay-online-link .icon-wrap{
-        display:block;
-        text-align:center
-    }
-}
-@media (max-width:767.98px){
-    #footer .pay-online-link{
-        margin-bottom:20px;
-        text-align:center;
-        -webkit-box-flex:0;
-        -ms-flex:0 0 100%;
-        flex:0 0 100%
-    }
-}
-#footer .footer-nav{
-    font-family:Poppins
-}
-#footer .footer-nav ul{
-    padding:0;
-    margin-top:-3px;
-    margin-bottom:-3px;
-    display:-webkit-box;
-    display:-ms-flexbox;
-    display:flex;
-    -ms-flex-wrap:wrap;
-    flex-wrap:wrap;
-    -webkit-box-pack:center;
-    -ms-flex-pack:center;
-    justify-content:center;
-    font-weight:500
-}
-#footer .footer-nav ul>li{
-    list-style:none;
-    padding-top:3px;
-    padding-bottom:3px
-}
-#footer .footer-nav ul>li+li:before{
-    content:"\f111";
-    font-family:FontAwesome;
-    margin-left:12px;
-    margin-right:12px;
-    color:#0a7cff;
-    vertical-align:middle;
-    font-size:.375rem
-}
-.blog img {
-  margin-bottom: 12px;
-}
-.heroSection {
-  padding-top: 0;
-}
-#footer .footer-nav ul>li a{
-    position:relative;
-    display:inline-block;
-    font-size:.9375rem;
-    color:rgba(66,66,66,.8);
-    font-weight:600
-}
-#footer .footer-nav ul>li a:hover{
-    text-decoration:underline
-}
-#footer .footer-nav.width2 ul,#footer .footer-nav.width3 ul{
-    --bs-gutter-x:24px;
-    --bs-gutter-y:0;
-    display:-webkit-box;
-    display:-ms-flexbox;
-    display:flex;
-    -ms-flex-wrap:wrap;
-    flex-wrap:wrap;
-    margin-top:calc(var(--bs-gutter-y) * -1);
-    margin-right:calc(var(--bs-gutter-x) * -.5);
-    margin-left:calc(var(--bs-gutter-x) * -.5)
-}
-#footer .footer-nav.width2 ul>li,#footer .footer-nav.width3 ul>li{
-    -ms-flex-negative:0;
-    flex-shrink:0;
-    width:100%;
-    max-width:100%;
-    padding-right:calc(var(--bs-gutter-x) * .5);
-    padding-left:calc(var(--bs-gutter-x) * .5);
-    margin-top:var(--bs-gutter-y)
-}
-@media (min-width:768px){
-    #footer .footer-nav.width2 ul>li{
-        -webkit-box-flex:0;
-        -ms-flex:0 0 50%;
-        flex:0 0 50%;
-        max-width:50%
-    }
-    #footer .footer-nav.width3 ul>li{
-        -webkit-box-flex:0;
-        -ms-flex:0 0 33.33333%;
-        flex:0 0 33.33333%;
-        max-width:0 0 33.33333%
-    }
-}
-@media (max-width:575.98px){
-    #footer .footer-nav.width2 ul>li,#footer .footer-nav.width3 ul>li{
-        -webkit-box-flex:0;
-        -ms-flex:0 0 50%;
-        flex:0 0 50%;
-        max-width:50%
-    }
-}
-.footer-last .footer_contact ul{
-    padding-top:5px
-}
-.footer-last .footer_contact ul li{
-    list-style:none;
-    padding-bottom:10px
-}
-.footer-last .footer_contact ul li i{
-    padding-right:15px;
-    padding-left:1px
-}
-.footer-last .footer_contact ul li a{
-    color:#0a7cff!important;
-    font-weight:600
-}
-@media (max-width:991.98px){
-    .footer-last .footer_contact{
-        margin-bottom:0;
-        text-align:center
-    }
-}
-.footer-last .footer_contact .footer_social{
-    display:-webkit-box;
-    display:-ms-flexbox;
-    display:flex;
-    padding-top:15px
-}
-.footer-last .footer_contact .footer_social a{
-    color:#424242;
-    margin-right:5px;
-    width:40px;
-    height:40px;
-    border-radius:50%;
-    line-height:37px;
-    border:2px solid #424242;
-    font-size:1.125rem;
-    text-align:center;
-    -webkit-transition:.3s all;
-    transition:.3s all
-}
-.footer-last .footer_contact .footer_social a:hover{
-    color:#fff;
-    background-color:#424242
-}
-.footer-last .footer_contact .footer_social+a{
-    padding-left:10px
-}
-@media (max-width:991.98px){
-    .footer-last .footer_contact .footer_social{
-        -webkit-box-pack:center;
-        -ms-flex-pack:center;
-        justify-content:center
-    }
-}
-.footer-last .newsletter-btn a{
-    display:-webkit-box;
-    display:-ms-flexbox;
-    display:flex;
-    -webkit-box-align:center;
-    -ms-flex-align:center;
-    align-items:center;
-    -webkit-box-pack:center;
-    -ms-flex-pack:center;
-    justify-content:center;
-    font-size:.875rem;
-    font-weight:700
-}
-.footer-last .newsletter-btn a i{
-    font-size:1.5rem;
-    padding-left:5px
-}
-section {
-  padding: 42px 0;
-}
-.fas.fa-star {
-  color: #0a7cff;
-}
-.fas.fa-long-arrow-alt-right {
-  color: #0a7cff;
-    font-size: 16px;
-    margin-left: 12px;
-}
-#footer .footer-last{
-    padding-top:80px;
-    padding-bottom:90px;
-    background-image: none;
-    background-color: rgba(10, 124, 255, .5);
-    border: 0;
-    position:relative
-}
-@media (max-width:991.98px){
-    #footer .footer-last{
-        padding-top:60px
-    }
-}
-@media (max-width:575.98px){
-    #footer .footer-last{
-        padding-top:55px
-    }
-}
-#footer .footer-last:after{
-    position:absolute;
-    left:0;
-    right:0;
-    content:'';
-    height:107px;
-    background:url(../images/footer-bg.png) no-repeat right bottom 15px
-}
-#footer .footer-last ul{
-    padding:0;
-    margin:0
-}
-#footer .footer-last ul li{
-    list-style:none
-}
-@media (max-width:991.98px){
-    #footer .footer-last ul li.col-lg-4{
-        margin-bottom:0
-    }
-}
-@media (max-width:991.98px){
-    #footer .footer-last ul li.col-lg-4:last-child{
-        margin-bottom:0
-    }
-}
-@media (min-width:992px){
-    #footer .footer-last ul li+li.col-lg-4{
-        border-left:1px solid #dadada
-    }
-}
-@media (max-width:991.98px){
-    #footer .footer-last ul li+li.col-lg-4{
-        border-top:1px solid #dadada;
-        padding-top:25px;
-        margin-top:20px
-    }
-}
-#footer .footer-last .text-center{
-    margin-top:7px;
-    padding:0 25px
-}
-#footer .footer-last .text-center .btn{
-    background-color:transparent;
-    color:#0a7cff!important;
-    border:none;
-    text-transform:uppercase;
-    -webkit-box-shadow:none;
-    box-shadow:none
-}
-#footer .footer-last .text-end{
-    padding-left:25px
-}
-@media (max-width:991.98px){
-    #footer .footer-last .text-end{
-        text-align:center!important
-    }
-}
-#footer .footer-last .text-end p,#footer .footer-last .text-end span{
-    font-size:.875rem
-}
-#footer .footer-last .copy-right{
-    line-height:1.6;
-    font-size:.875rem;
-    color:#4f4f51;
-    text-align:center;
-    padding-top:20px
-}
-@media (max-width:991.98px){
-    #footer .footer-last .copy-right{
-        padding-top:0
-    }
-}
-#footer .footer-last .copy-right p{
-    margin-bottom:0;
-    color:#4f4f51;
-    font-weight:600;
-    font-size:.875rem
-}
-#footer .footer-last .copy-right p a{
-    color:#424242
-}
-#footer .footer-last .copy-right b{
-    font-weight:600
-}
-#footer .footer-last .copy-right span{
-    font-size:.875rem;
-    color:#666
-}
-@media (max-width:1199.98px){
-    #footer .footer-last .copy-right{
-        line-height:1.5
-    }
-}
- 
-    * {
-      box-sizing: border-box;
-      font-family: 'Montserrat', sans-serif;
-    }
-
-    h1 {
-      font-size: 36px;
-      color: #0a7cff;
-    padding-bottom: 0;
-    margin-bottom: 1rem;
-    font-weight: 600;
-    }
-    .heroDescription.container {
-      box-shadow: 0 2px 4px 0 rgb(0 0 0 / 15%);
-    border-radius: 2px;
-    padding:32px;
-   margin-top: 62px;
-   margin-bottom: 62px;
-    }
-    h2 {
-      font-size: 1.75rem;
-      margin-bottom: 1rem;
-      font-weight: 600;
-    }
-   .sectionHead>a {
-      font-size: 14px;
-      margin-bottom: 12px;
-      display: block;
-      font-weight: 500;
-    }
-    button {
-      border: none;
-    background: #0a7cff;
-    color: #fff;
-    font-size: 18px;
-    padding: 6px 17px;
-    border-radius: 8px;
-    font-weight: 500;
-    }
-    .service-content.common-module.mb-lg-0 {
-      position: relative;
-      z-index: 99;
-    }
-    h3 {
-      font-size: 18px;
-      font-weight: 500;
-      margin-bottom: 1rem;
-    }
-
-    .carousel-item img {
-      height: 85vh;
-      width: 100%;
-    }
-    .blog .col-md-6 {
-      overflow: hidden;
-    }
-    .blog .col-md-6:hover img {
-      transition: all .1s ease;
-      width: 105%;
-      height: auto;
-     cursor: pointer;
-    }
-    a {
-      cursor: pointer;
-    }
-    .headerNotice {
-      background: #0a7cff;
-      display: flex;
-      align-items: center;
-      padding: 12px 112px;
-      justify-content: space-between;
-    }
-
-    .headerNotice p {
-      font-size: 16px;
-      letter-spacing: .8px;
-      margin: 0;
-      color: #fff;
-      text-align: center;
-      font-weight: 500;
-    }
-
-    .navbar .nav-link {
-      font-size: 14px;
-      letter-spacing: .5px;
-      color: #000;
-    }
-
-    .trekkingCollection img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-    }
-    .dropdown-menu {
-      font-size: 14px;
-      border: 0;
-    }
-    #navbarSupportedContent .form-control {
-      border: 1.5px solid #0a7cff;
-      border-radius: 20px;
-      color: #000;
-      opacity: 1;
-    }
-
-    #navbarSupportedContent .btn.btn-outline-success {
-      border: 0;
-      position: absolute;
-      right: 32px;
-    }
-
-    #navbarSupportedContent img {
-      max-width: 22px;
-    }
-
-    .carousel-caption.d-none.d-md-block {
-      background: rgba(0, 0, 0, .5);
-    }
-
-    .image-container {
-
-      position: relative;
-      border: 4px solid #fff;
-    }
-    p {
-      font-size: 15px;
-    line-height: 24px;
-    letter-spacing: .5px;
-    }
-
-    .image-container img {
-      /*tinkering with image bigger than parent div. Note: bad practice*/
-      position: absolute;
-      transform: scale(1);
-      /*making the scaling smooth*/
-      transition: transform 0.5s ease;
-    }
-
-    .image-container:hover img {
-      transform: scale(1.2);
-      cursor: pointer;
-      z-index: 9;
-    }
-
-    .overlay {
-      position: absolute;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.5);
-      color: transparent;
-      width: 100%;
-      text-align: center;
-      height: 0;
-      transition: height 0.5s ease;
-      z-index: 99;
-    }
-
-    .image-container:hover .overlay {
-      height: 50px;
-      color: #fff;
-      font-weight: 500;
-      top: -18px;
-    }
-
-    .belowOverlay {
-      margin-top: 60%;
-    }
-
-    .belowOverlay>div {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .floatingSection img {
-      width: 100%;
-    }
-
-    .trip-month-wrap .trip_content {
-      background-color: #fff;
-      position: relative;
-      top: 20px;
-      padding: 0 35px 35px;
-      border-radius: 0 0 2px 2px;
-      -webkit-box-shadow: 0 2px 4px 0 rgb(0 0 0 / 15%);
-      box-shadow: 0 2px 4px 0 rgb(0 0 0 / 15%);
-    }
-
-    .trip-month-wrap .trip_content:before {
-      position: absolute;
-      content: '';
-      left: 0;
-      top: -5px;
-      height: 5px;
-      width: 100%;
-      background-color: #0a7cff;
-      border-radius: 2px 2px 0 0;
-    }
-
-    .trip-month-wrap .trip_content .trip-sub-title {
-      background-color: #0a7cff;
-      color: #fff;
-      font-size: .875rem;
-      padding: 10px 20px;
-      text-transform: uppercase;
-      font-weight: 600;
-      border-radius: 2px;
-      position: absolute;
-      content: '';
-      top: -5px;
-    }
-
-    .trip-month-wrap .trip_content h4 {
-      margin-top: 60px;
-      font-size: 1.5rem;
-    }
-
-    .trip-month-wrap .trip_content .trip_duration {
-      font-weight: 500;
-    }
-
-    .trip-month-wrap .trip_content .trip_detail {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
-      padding-top: 35px;
-    }
-
-    .trip-month-wrap .trip_content .trip_detail .trip_price span {
-      display: block;
-    }
-
-    .trip-month-wrap .trip_content .trip_detail .trip_price span.rating {
-      margin-top: 10px;
-      color: #0a7cff;
-    opacity: 1;
-    font-weight: 500;
-    }
-
-    i[class*=" ratings_"],
-    i[class^=ratings_] {
-      display: inline-block;
-      line-height: 1;
-      font-family: FontAwesome;
-      font-style: normal;
-      position: relative;
-      white-space: nowrap;
-      letter-spacing: 2px;
-      color: #0a7cff;
-    }
-
-    .trip-month-wrap .trip_content .trip_detail .trip_btn .btn {
-      font-family: Montserrat;
-      font-weight: 600;
-      font-size: .875rem;
-    }
-
-    .btn.btn-md {
-      padding: 10px 25px;
-      text-align: center;
-    }
-
-    .btn.btn-round {
-      background-color: #0a7cff;
-    color: #fff;
-      -webkit-box-shadow: none;
-      box-shadow: none;
-      border: 1px solid #0a7cff;
-    }
-
-    .btn.has-long-arrow:after {
-      margin-left: 5px;
-      font-size: 1.125rem;
-      line-height: 1;
-      -webkit-transition: .3s linear transform;
-      transition: .3s linear transform;
-      content: "\e913";
-      font-weight: 400;
-      display: inline-block;
-      vertical-align: middle;
-      font-family: icomoon;
-    }
-
-    .floatingDiv {
-      margin-top: -120px;
-    }
-
-    .col-md-4.item {
-      width: 100%;
-    }
-
-    .expedition {
-      margin: 82px;
-    }
-
-    .expedition .image-container:hover .overlay {
-      top: -4px;
-    }
-
-    .expedition .image-container {
-      border-left: 0;
-      border-radius: 0;
-    }
-
-    .owl-item.active:hover {
-      z-index: 999999999;
-    }
-
-    .owl-nav {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .owl-nav button span {
-      font-size: 42px;
-      font-weight: bold;
-      margin: 12px;
-      padding-bottom: 6px;
-    }
-
-    .owl-nav button {
-      border: 2px solid #0a7cff !important;
-      border-radius: 50%;
-      height: 50px;
-      width: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 32px 12px;
-    }
-
-    .owl-prev.disabled,
-    .owl-next.disabled {
-      opacity: .6;
-    }
-
-    .trekkingCategory img {
-      max-width: 72px;
-    }
-
-    .trekkingCategory {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .service-content-wrapper {
-      position: relative;
-      z-index: 0;
-      background-color: #eff6f9;
-    }
-
-    @media (min-width: 992px) {
-      .common-box {
-        padding-top: 80px;
-        padding-bottom: 80px;
-      }
-    }
-
-    @media (min-width: 576px) {
-      .common-box {
-        padding-top: 60px;
-        padding-bottom: 60px;
-      }
-    }
-    .sectionHead {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .common-box {
-      padding-top: 55px;
-      padding-bottom: 55px;
-      position: relative;
-    }
-
-    @media (min-width: 992px) {
-      .service-content-wrapper .intro-image {
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        max-height: 100%;
-        z-index: 1;
-        overflow: hidden;
-      }
-    }
-
-    @media (min-width: 992px) {
-      .service-content-wrapper .intro-image .image-wrapper {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        position: relative;
-      }
-    }
-
-    .service-content-wrapper .image-wrapper {
-      padding-left: 100px;
-    }
-
-    @media (min-width: 992px) {
-      .service-content-wrapper .intro-image .image-wrapper img {
-        height: auto;
-        width: auto;
-      }
-    }
-
-    @media (min-width: 992px) {
-      .service-content-wrapper .intro-image * {
-        height: 100%;
-      }
-    }
-
-    .lazyloaded {
-      opacity: 1;
-      -webkit-transition: opacity .3s;
-      transition: opacity .3s;
-    }
-
-    @media (min-width: 992px) {
-      .ms-lg-auto {
-        margin-left: auto !important;
-      }
-    }
-
-    .common-module {
-      margin-bottom: 40px;
-    }
-
-    @media (min-width: 992px) {
-      .mb-lg-0 {
-        margin-bottom: 0 !important;
-      }
-    }
-
-    .service-content-wrapper .service-content .title {
-      text-align: start;
-      text-transform: uppercase;
-    }
-
-    .title {
-      display: block;
-      position: relative;
-      margin-bottom: 30px;
-      text-align: center;
-    }
-
-    .service-content-wrapper .service-content .title h2 {
-      margin-bottom: 0;
-    }
-
-    @media (min-width: 1200px) {
-      .title h2 {
-        font-size: 2rem;
-      }
-    }
-
-    .title h2 {
-      font-size: calc(1.325rem + .9vw);
-      font-weight: 800;
-    }
-
-    .service-content-wrapper .service-content .title .sub-title {
-      font-size: 1.25rem;
-      font-weight: 300;
-      color: #424242;
-    }
-
-    .service-content-wrapper .service-content ul {
-      margin: 0;
-      padding: 0;
-    }
-
-    .service-content-wrapper .service-content ul li {
-      list-style: none;
-      position: relative;
-      padding-left: 100px;
-    }
-
-    ul .item {
-      -webkit-transition: .3s linear box-shadow, .3s linear border-color;
-      transition: .3s linear box-shadow, .3s linear border-color;
-      border-radius: 3px;
-    }
-
-    .service-content-wrapper .service-content ul li {
-      list-style: none;
-      position: relative;
-      padding-left: 100px;
-    }
-
-    ul .item {
-      -webkit-transition: .3s linear box-shadow, .3s linear border-color;
-      transition: .3s linear box-shadow, .3s linear border-color;
-      border-radius: 3px;
-    }
-
-    .service-content-wrapper .service-content ul li h4 {
-      margin-bottom: 10px;
-      font-size: 1.125rem;
-    }
-
-    .service-content-wrapper .service-content ul li p {
-      font-size: .875rem;
-    }
-
-
-    .service-content-wrapper .service-content ul li.safety:after {
-      content: '\e91d';
-    }
-
-    .service-content-wrapper .service-content ul li:after {
-      position: absolute;
-      content: '';
-      left: 15px;
-      top: -10px;
-      font-family: icomoon;
-      font-size: 3.5rem;
-      color: #0a7cff;
-    }
-
-    .service-content-wrapper .service-content ul li+li:before {
-      top: 35px;
-    }
-
-    .service-content-wrapper .service-content ul li.responsible:after {
-      content: '\e925';
-      top: 12px;
-      font-size: 3.25rem;
-    }
-
-    .service-content-wrapper .service-content ul li.provided:after {
-      content: '\e91a';
-      top: 12px;
-      font-size: 3.125rem;
-    }
-
-    .service-content-wrapper .service-content ul li.csr:after {
-      content: '\e90e';
-      top: 12px;
-      font-size: 3.125rem;
-    }
-
-    .blog img {
-      width: 100%;
-      height: auto;
-    }
-
-    .associated ul {
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-    }
-
-    .associated ul {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .activities__list,
-    .associated ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    .associated ul>li img {
-      max-width: 70px;
-    }
-    .carousel-indicators [data-bs-target]{
-      background-color: #0a7cff;
-    }
-    a.navbar-brand {
-      max-height: 60px;
-    max-width: 280px;
-    overflow: hidden;
-    }
-    a.navbar-brand img {
-      margin-left: -216px;
-    max-height: 105px;
-    }
-  </style>
-
-  <header class="bg-light">
-    <div class="headerNotice">
-      <div>
-        <p>20 Year’s of Excellence</p>
-      </div>
-      <div>
-        <p>We’re taking booking for 2022/2023. Reserve your place on the Curated and Responsible Journey</p>
-      </div>
+<body class="home">
+    <!-- preloader - start -->
+    <div id="preloader"></div>
+    <div class="up">
+        <a href="#" class="scrollup text-center"><i class="fas fa-chevron-up"></i></a>
     </div>
-    <nav class="navbar navbar-expand-lg bg-light container">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="/processed-97ef3d96-6562-42ca-a5f2-2f3cc59522be_y17GQfjz.jpeg"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Trekking in Nepal</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Climbing in Nepal</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Expedition in Nepal
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Destinations</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit"><img
-                src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/50/000000/external-search-interface-kiranshastry-gradient-kiranshastry.png" /></button>
-          </form>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-
-  <main>
-    <section class="heroSection">
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="https://images.unsplash.com/photo-1529316058072-4cdf93b52741?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-              class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>POKHARA</h5>
-              <p>Some representative placeholder content for the first slide. Some representative placeholder content
-                for the first slide.</p>
+    <!-- Start of header section
+       ============================================= -->
+    <header id="header" class="header-main header-style-three">
+        <div class="header-three clearfix">
+            <div class="container">
+                <div class="brand-logo float-left">
+                    <a href="#"><img src="./xcoply.jpeg" alt=""></a>
+                </div>
+                <div class="header-cart-login float-right">
+                    <div class="top-cart-login">
+                        <button data-toggle="modal" data-target="#exampleModal"><i class="fas fa-user"></i></button>
+                    </div>
+                </div>
+                <div class="main-navigation  float-right">
+                    <nav class="main-nav ul-li">
+                        <ul id="main-nav" class="navbar-nav text-capitalize clearfix">
+                            <li class="dropdown">
+                                <a href="#">Trekking in Nepal</a>
+                                <ul class="dropdown-menu clearfix">
+                                    <li><a href="index.html">Home Page 1</a></li>
+                                    <li><a href="index-2.html">Home Page 2</a></li>
+                                    <li><a href="index-3.html">Home Page 3</a></li>
+                                    <li><a href="index-4.html">Home Page 4</a></li>
+                                    <li><a href="index-5.html">Home Page 5</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#">Activity</a>
+                                <ul class="dropdown-menu clearfix">
+                                    <li class="dropdown">
+                                        <a href="#">Activity List</a>
+                                        <ul class="dropdown-menu clearfix">
+                                            <li><a href="activity.html">Activity List</a></li>
+                                            <li><a href="activity-grid-with-sidebar.html">Activity Grid With Sidebar</a></li>
+                                            <li><a href="activity-list-with-sidebar.html">Activity List With Sidebar</a></li>
+                                            <li><a href="activity-list-half-map.html">Activity List With Half Map</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#">Activity Details</a>
+                                        <ul class="dropdown-menu clearfix">
+                                            <li><a href="activity-details.html">Activity Details 1</a></li>
+                                            <li><a href="activity-details-2.html">Activity Details 2</a></li>
+                                            <li><a href="activity-details-3.html">Activity Details 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#">Submit Activity</a>
+                                        <ul class="dropdown-menu clearfix">
+                                            <li><a href="submit-activity.html">Submit Activity 1</a></li>
+                                            <li><a href="submit-activity-2.html">Submit Activity 2</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#">Pages</a>
+                                <ul class="dropdown-menu clearfix">
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="gallery.html">Gallery</a></li>
+                                    <li><a href="pricing.html">Pricing</a></li>
+                                    <li><a href="payment.html">Payment</a></li>
+                                    <li><a href="booking.html">Booking</a></li>
+                                    <li><a href="booking-2.html">Booking 2</a></li>
+                                    <li><a href="faq.html">Faq</a></li>
+                                    <li><a href="404.html">404</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#">Blog</a>
+                                <ul class="dropdown-menu clearfix">
+                                    <li><a href="blog-1.html">Blog 1</a></li>
+                                    <li><a href="blog-2.html">Blog 2</a></li>
+                                    <li><a href="blog-details-1.html">Blog Details 1</a></li>
+                                    <li><a href="blog-details-2.html">Blog Details 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#">Agent</a>
+                                <ul class="dropdown-menu clearfix">
+                                    <li><a href="agent.html">Agent</a></li>
+                                    <li><a href="agent-details.html">Agent Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#">Contact</a>
+                                <ul class="dropdown-menu clearfix">
+                                    <li><a href="contact.html">Contact 1</a></li>
+                                    <li><a href="contact-2.html">Contact 2</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="mobile-menu-navbar">
+                    <div class="mobile-menu position-relative">
+                        <div class="mobile-menu-button nav-mobile-menu">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                        <div class="mobile-menu-navbar">
+                            <div class="mobile-menu-overlay nav-mobile-menu"></div>
+                            <div class="mobile-menu-content">
+                                <div class="close-mobile-menu nav-mobile-menu">
+                                    <i class="fas fa-times"></i>
+                                </div>
+                                <div class="m-brand-logo text-center">
+                                    <a href="#"><img src="./xcoply.jpeg" alt=""></a>
+                                </div>
+                                <nav class="mobile-main-nav  clearfix ul-li">
+                                    <ul id="m-main-nav" class="navbar-nav text-capitalize clearfix">
+                                        <li class="dropdown">
+                                            <a href="#">Home</a>
+                                            <ul class="dropdown-menu clearfix">
+                                                <li><a href="index.html">Home Page 1</a></li>
+                                                <li><a href="index-2.html">Home Page 2</a></li>
+                                                <li><a href="index-3.html">Home Page 3</a></li>
+                                                <li><a href="index-4.html">Home Page 4</a></li>
+                                                <li><a href="index-5.html">Home Page 5</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#">Activity</a>
+                                            <ul class="dropdown-menu clearfix">
+                                                <li class="dropdown">
+                                                    <a href="#">Activity List</a>
+                                                    <ul class="dropdown-menu clearfix">
+                                                        <li><a href="activity.html">Activity List</a></li>
+                                                        <li><a href="activity-grid-with-sidebar.html">Activity Grid With Sidebar</a></li>
+                                                        <li><a href="activity-list-with-sidebar.html">Activity List With Sidebar</a></li>
+                                                        <li><a href="activity-list-half-map.html">Activity List With Half Map</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown">
+                                                    <a href="#">Activity Details</a>
+                                                    <ul class="dropdown-menu clearfix">
+                                                        <li><a href="activity-details.html">Activity Details 1</a></li>
+                                                        <li><a href="activity-details-2.html">Activity Details 2</a></li>
+                                                        <li><a href="activity-details-3.html">Activity Details 3</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown">
+                                                    <a href="#">Submit Activity</a>
+                                                    <ul class="dropdown-menu clearfix">
+                                                        <li><a href="submit-activity.html">Submit Activity 1</a></li>
+                                                        <li><a href="submit-activity-2.html">Submit Activity 2</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#">Pages</a>
+                                            <ul class="dropdown-menu clearfix">
+                                                <li><a href="about.html">About</a></li>
+                                                <li><a href="gallery.html">Gallery</a></li>
+                                                <li><a href="pricing.html">Pricing</a></li>
+                                                <li><a href="payment.html">Payment</a></li>
+                                                <li><a href="booking.html">Booking</a></li>
+                                                <li><a href="booking-2.html">Booking 2</a></li>
+                                                <li><a href="faq.html">Faq</a></li>
+                                                <li><a href="404.html">404</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#">Blog</a>
+                                            <ul class="dropdown-menu clearfix">
+                                                <li><a href="blog-1.html">Blog 1</a></li>
+                                                <li><a href="blog-2.html">Blog 2</a></li>
+                                                <li><a href="blog-details-1.html">Blog Details 1</a></li>
+                                                <li><a href="blog-details-2.html">Blog Details 2</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#">Agent</a>
+                                            <ul class="dropdown-menu clearfix">
+                                                <li><a href="agent.html">Agent</a></li>
+                                                <li><a href="agent-details.html">Agent Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#">Contact</a>
+                                            <ul class="dropdown-menu clearfix">
+                                                <li><a href="contact.html">Contact 1</a></li>
+                                                <li><a href="contact-2.html">Contact 2</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Mobile-Menu -->
+                </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="https://images.unsplash.com/photo-1617469165786-8007eda3caa7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-              class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>MUSTANG</h5>
-              <p>Some representative placeholder content for the second slide. Some representative placeholder content
-                for the first slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="https://images.unsplash.com/photo-1526712318848-5f38e2740d44?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-              class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>TILICHO</h5>
-              <p>Some representative placeholder content for the third slide. Some representative placeholder content
-                for the first slide.</p>
-            </div>
-          </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+    </header>
+    <!-- End of header section
+       ============================================= -->
+    <!-- Start of slider section
+       ============================================= -->
+    <section id="slider-2" class="slider-section-2">
+        <div id="main-slider-2" class="main-slider-content owl-carousel">
+            <div class="slider-main-item-2 position-relative">
+                <div class="slider-main-img img-zooming" data-background="https://images.unsplash.com/photo-1617469165786-8007eda3caa7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"></div>
+                <div class="slider-overlay"></div>
+                <div class="container">
+                    <div class="slider-main-text headline text-center pera-content">
+                        <span>Featured Activity</span>
+                        <h1>
+                            Amsterdam Canal Cruise
+                        </h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <a href="#">Browse Activity</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-main-item-2 position-relative">
+                <div class="slider-main-img img-zooming" data-background="https://images.unsplash.com/photo-1529316058072-4cdf93b52741?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"></div>
+                <div class="slider-overlay"></div>
+                <div class="container">
+                    <div class="slider-main-text headline text-center pera-content">
+                        <span>New Activity</span>
+                        <h1>
+                            Venice City Tour
+                        </h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <a href="#">Browse Activity</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-main-item-2 position-relative">
+                <div class="slider-main-img img-zooming" data-background="https://images.unsplash.com/photo-1617469165786-8007eda3caa7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"></div>
+                <div class="slider-overlay"></div>
+                <div class="container">
+                    <div class="slider-main-text headline text-center pera-content">
+                        <span>Best Activity</span>
+                        <h1>
+                            Rome Private Tour
+                        </h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <a href="#">Browse Activity</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+    <!-- End of slider section
+       ============================================= -->
 
-    <section class="heroDescription container">
-      <div class="sectionHead">
-        <h1>Trekking in Nepal</h1>
-        <h3>Curated and Responsible Adventure</h3>
-      </div>
-      <div>
-        <div class="description">
-          <P>Curated by a team of <em>Trekking in Nepal</em> Experts, Mountain Monarch is one of the best adventure
-            companies for Nepal trekking trips. Our competent and professional team has been leading countless
-            successful adventure trekking in Himalaya for over 2 decades. It has helped us grow to become a genuinely
-            reliable adventure company to run Nepal treks to peak climbing expeditions in the Himalayas. Distinct
-            responsible travel practices with proper safety backup are our main signature priorities in organizing any
-            adventure trekking and climbing package tours.</P>
+    <!-- Start of search section
+       ============================================= -->
+    <div class="banner-search-section style-two text-center clearfix">
+        <div class="container">
+            <div class="banner-search-form position-relative">
+                <form action="#">
+                    <div class="search-form-fields">
+                        <div class="search-form-field">
+                            <i class="fa fa-search icon"></i>
+                            <input type="text" class="input-field" placeholder="Where are you going?" />
+                        </div>
+                        <div class="search-form-field">
+                            <select>
+                                <option data-display="Activity Type">Activity Type </option>
+                                <option value="1">Sightseeing</option>
+                                <option value="2">Nature</option>
+                                <option value="3">Day trip</option>
+                                <option value="4">Guided tour</option>
+                                <option value="5">Private tour</option>
+                            </select>
+                        </div>
+                        <div class="search-form-field">
+                            <select>
+                                <option data-display="Destinations ">Destinations </option>
+                                <option value="1">Newyork</option>
+                                <option value="2">London</option>
+                                <option value="3">Paris</option>
+                            </select>
+                        </div>
+                        <div class="search-form-field">
+                            <select>
+                                <option data-display="Duration">Duration</option>
+                                <option value="1">0-3 hours</option>
+                                <option value="2">3-5 hours</option>
+                                <option value="3">5-7 hours</option>
+                                <option value="4">Full day (7+ hours)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit"><i class="fas fa-search"></i> Search</button>
+                </form>
+            </div>
         </div>
-        <div class="moreDescription d-none">
-          <div class="row">
-            <div class="col-md-6">
-              <h3>Responsible Trekking in Nepal with Proper Safety</h3>
-              <p>Nepal exhibits incomparable natural beauties decorated by the long preserved local cultures. Mountain
-                Monarch, being a reputed trekking agency in Nepal, has not only introduced these gifts to the
-                adventurers but has held a reputation for unfolding natural and cultural aesthetics like never before.
-                We always make sure Oxygen Cylinders and Comprehensive Medical Kit are accompanied by experienced and
-                medically trained guides on each trip for the safe adventure holidays of a lifetime. These are extremely
-                necessary, especially during high-altitude treks to climbing trips in the Himalayas. More than that, we
-                have committed to conducting socially responsible best adventure tours in Nepal. Our "1 Trekker:1 Porter
-                " on Trekking in Himalaya to climbing expedition is a gesture of responsible travel that has been
-                encouraged and praised by many of our travelers. This responsible travel policy has helped to lessen the
-                burden of the porters and also create employment opportunities for many others, a way for us to give
-                back to our local community. Also, concerning environmental efforts, we support sustainable tourism that
-                helps to promote and preserve the Himalayas. The effective practices of these safety measures and
-                responsible travel guidelines on organizing Nepal adventure trekking holidays, have gained us a glowing
-                reputation in part of Trip Advisor and Lonely Planet's continuous recommendations.</p>
-              <h3>Trek to Climb in Himalaya: Wide Range of Trips</h3>
-              <p>There is rarely such a mind-boggling diversity and possibility in terms of adventure tours in Nepal.
-                From beautiful mountain views to the warm hospitality of local culturally rich biodiversity to toiling
-                hikes and climb, are filled with adventure, excitement, anticipation, and a feeling of overwhelming
-                happiness. Our ultimate Nepal Trekking package offers an imaginable number of choices, destinations, and
-                adventure activities ranging from cultural tours to hiking and trek to peak climbing expedition, etc.
-                Popular Trekking in the Himalayas like the Everest Base Camp Trek, Everest Three Passes Trek, Annapurna
-                Sanctuary Trek, Annapurna Circuit Trek, and Langtang Gosaikunda Trek are classic trails with plenty of
-                teahouses to stay at.</p>
-              <p>There are some off-the-beaten trails with the adventure experience to spend the nights under the sky in
-                a tented camp like the Upper Dolpo Trek, Around Dhaulagiri Trek. A culturally fascinating hike to Upper
-                Mustang Trek is a unique journey that celebrates the ancient Tibetan heritage in the rain</p>
-            </div>
-            <div class="col-md-6">
-              <h3>Responsible Trekking in Nepal with Proper Safety</h3>
-              <p>Nepal exhibits incomparable natural beauties decorated by the long preserved local cultures. Mountain
-                Monarch, being a reputed trekking agency in Nepal, has not only introduced these gifts to the
-                adventurers but has held a reputation for unfolding natural and cultural aesthetics like never before.
-                We always make sure Oxygen Cylinders and Comprehensive Medical Kit are accompanied by experienced and
-                medically trained guides on each trip for the safe adventure holidays of a lifetime. These are extremely
-                necessary, especially during high-altitude treks to climbing trips in the Himalayas. More than that, we
-                have committed to conducting socially responsible best adventure tours in Nepal. Our "1 Trekker:1 Porter
-                " on Trekking in Himalaya to climbing expedition is a gesture of responsible travel that has been
-                encouraged and praised by many of our travelers. This responsible travel policy has helped to lessen the
-                burden of the porters and also create employment opportunities for many others, a way for us to give
-                back to our local community. Also, concerning environmental efforts, we support sustainable tourism that
-                helps to promote and preserve the Himalayas. The effective practices of these safety measures and
-                responsible travel guidelines on organizing Nepal adventure trekking holidays, have gained us a glowing
-                reputation in part of Trip Advisor and Lonely Planet's continuous recommendations.</p>
-              <h3>Trek to Climb in Himalaya: Wide Range of Trips</h3>
-              <p>There is rarely such a mind-boggling diversity and possibility in terms of adventure tours in Nepal.
-                From beautiful mountain views to the warm hospitality of local culturally rich biodiversity to toiling
-                hikes and climb, are filled with adventure, excitement, anticipation, and a feeling of overwhelming
-                happiness. Our ultimate Nepal Trekking package offers an imaginable number of choices, destinations, and
-                adventure activities ranging from cultural tours to hiking and trek to peak climbing expedition, etc.
-                Popular Trekking in the Himalayas like the Everest Base Camp Trek, Everest Three Passes Trek, Annapurna
-                Sanctuary Trek, Annapurna Circuit Trek, and Langtang Gosaikunda Trek are classic trails with plenty of
-                teahouses to stay at.</p>
-              <p>There are some off-the-beaten trails with the adventure experience to spend the nights under the sky in
-                a tented camp like the Upper Dolpo Trek, Around Dhaulagiri Trek. A culturally fascinating hike to Upper
-                Mustang Trek is a unique journey that celebrates the ancient Tibetan heritage in the rain</p>
-            </div>
-          </div>
-        </div>
-        <button id="readMore">Read More</button>
-      </div>
-    </section>
-
-    <section class="trekkingCollection container">
-     <div class="sectionHead">
-      <h2>NEPAL TREKKING</h2>
-      <a>VIEW ALL TREKKING <i class="fas fa-long-arrow-alt-right"></i></a>
-     </div>
-
-      <div class="row">
-        <div class="col-md-4">
-          <div class="image-container">
-            <img alt="Everest base camp trekking"
-              src="https://th.bing.com/th/id/R.fa081bb8d0d9e1aa3fdfe39349d64885?rik=ST8BwF2CTCQ9aQ&pid=ImgRaw&r=0">
-            <div class="overlay">
-              <p>LOCATION</p>
-            </div>
-            <div class="belowOverlay">
-              <h3>Mera Peak Climbing</h3>
-              <div>
-                <div>
-                  <p>Duration: 20 Days</p>
-                  <p><span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                        class="fas fa-star"></i><i class="fas fa-star"></i> 30 Reviews</span></p>
-                </div>
-                <div>
-                  <p>Price</p>
-                  <p>US$2690</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col-md-4">
-          <div class="image-container">
-            <img alt="Everest base camp trekking"
-              src="https://th.bing.com/th/id/R.fa081bb8d0d9e1aa3fdfe39349d64885?rik=ST8BwF2CTCQ9aQ&pid=ImgRaw&r=0">
-            <div class="overlay">
-              <p>LOCATION</p>
-            </div>
-            <div class="belowOverlay">
-              <h3>Mera Peak Climbing</h3>
-              <div>
-                <div>
-                  <p>Duration: 20 Days</p>
-                  <p><span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                        class="fas fa-star"></i><i class="fas fa-star"></i> 30 Reviews</span></p>
-                </div>
-                <div>
-                  <p>Price</p>
-                  <p>US$2690</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col-md-4">
-          <div class="image-container">
-            <img alt="Everest base camp trekking"
-              src="https://th.bing.com/th/id/R.fa081bb8d0d9e1aa3fdfe39349d64885?rik=ST8BwF2CTCQ9aQ&pid=ImgRaw&r=0">
-            <div class="overlay">
-              <p>LOCATION</p>
-            </div>
-            <div class="belowOverlay">
-              <h3>Mera Peak Climbing</h3>
-              <div>
-                <div>
-                  <p>Duration: 20 Days</p>
-                  <p><span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                        class="fas fa-star"></i><i class="fas fa-star"></i> 30 Reviews</span></p>
-                </div>
-                <div>
-                  <p>Price</p>
-                  <p>US$2690</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-
-      <div class="row">
-        <div class="col-md-4">
-          <div class="image-container">
-            <img alt="Everest base camp trekking"
-              src="https://th.bing.com/th/id/R.fa081bb8d0d9e1aa3fdfe39349d64885?rik=ST8BwF2CTCQ9aQ&pid=ImgRaw&r=0">
-            <div class="overlay">
-              <p>LOCATION</p>
-            </div>
-            <div class="belowOverlay">
-              <h3>Mera Peak Climbing</h3>
-              <div>
-                <div>
-                  <p>Duration: 20 Days</p>
-                  <p><span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                        class="fas fa-star"></i><i class="fas fa-star"></i> 30 Reviews</span></p>
-                </div>
-                <div>
-                  <p>Price</p>
-                  <p>US$2690</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col-md-4">
-          <div class="image-container">
-            <img alt="Everest base camp trekking"
-              src="https://th.bing.com/th/id/R.fa081bb8d0d9e1aa3fdfe39349d64885?rik=ST8BwF2CTCQ9aQ&pid=ImgRaw&r=0">
-            <div class="overlay">
-              <p>LOCATION</p>
-            </div>
-            <div class="belowOverlay">
-              <h3>Mera Peak Climbing</h3>
-              <div>
-                <div>
-                  <p>Duration: 20 Days</p>
-                  <p><span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                        class="fas fa-star"></i><i class="fas fa-star"></i> 30 Reviews</span></p>
-                </div>
-                <div>
-                  <p>Price</p>
-                  <p>US$2690</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col-md-4">
-          <div class="image-container">
-            <img alt="Everest base camp trekking"
-              src="https://th.bing.com/th/id/R.fa081bb8d0d9e1aa3fdfe39349d64885?rik=ST8BwF2CTCQ9aQ&pid=ImgRaw&r=0">
-            <div class="overlay">
-              <p>LOCATION</p>
-            </div>
-            <div class="belowOverlay">
-              <h3>Mera Peak Climbing</h3>
-              <div>
-                <div>
-                  <p>Duration: 20 Days</p>
-                  <p><span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                        class="fas fa-star"></i><i class="fas fa-star"></i> 30 Reviews</span></p>
-                </div>
-                <div>
-                  <p>Price</p>
-                  <p>US$2690</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </section>
-
-    <section class="floatingSection trip-month-wrap">
-      <img src="https://www.nps.gov/im/cakn/images/CAKN_AlaskaRange_JacobFrank.jpg?maxwidth=1200&autorotate=false">
-      <div class="floatingDiv container">
-        <div class="row">
-          <div class="trip_content col-lg-6 ml-auto"><span class="trip-sub-title">Trip Of the month</span>
-            <h4>Island Peak Climbing</h4><span class="trip_duration">Duration: 20 Days</span>
-            <div class="trip_detail">
-              <div class="trip_price"><span>Start from <b>US$2690</b> per pack</span><span class="rating"><i
-                    class="ratings__5"></i> 30 reviews</span></div>
-              <div class="trip_btn"><a href=""
-                  class="btn btn-md btn-round ">View Details <i class="fas fa-info"></i></a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="expedition container">
-     <div class="sectionHead">
-      <h2>Expedition in the Himalaya</h2>
-      <a>VIEW ALL Expedition <i class="fas fa-long-arrow-alt-right"></i></a>
-     </div>
-
-      <div class="row owl-carousel owl-theme">
-        <div class="col-md-4 item">
-          <div class="image-container">
-            <img alt="Everest base camp trekking"
-              src="https://th.bing.com/th/id/R.fa081bb8d0d9e1aa3fdfe39349d64885?rik=ST8BwF2CTCQ9aQ&pid=ImgRaw&r=0">
-            <div class="overlay">
-              <p>LOCATION</p>
-            </div>
-            <div class="belowOverlay">
-              <h3>Mera Peak Climbing</h3>
-              <div>
-                <div>
-                  <p>Duration: 20 Days</p>
-                  <p><span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                        class="fas fa-star"></i><i class="fas fa-star"></i> 30 Reviews</span></p>
-                </div>
-                <div>
-                  <p>Price</p>
-                  <p>US$2690</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col-md-4 item">
-          <div class="image-container">
-            <img alt="Everest base camp trekking"
-              src="https://th.bing.com/th/id/R.fa081bb8d0d9e1aa3fdfe39349d64885?rik=ST8BwF2CTCQ9aQ&pid=ImgRaw&r=0">
-            <div class="overlay">
-              <p>LOCATION</p>
-            </div>
-            <div class="belowOverlay">
-              <h3>Mera Peak Climbing</h3>
-              <div>
-                <div>
-                  <p>Duration: 20 Days</p>
-                  <p><span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                        class="fas fa-star"></i><i class="fas fa-star"></i> 30 Reviews</span></p>
-                </div>
-                <div>
-                  <p>Price</p>
-                  <p>US$2690</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col-md-4 item">
-          <div class="image-container">
-            <img alt="Everest base camp trekking"
-              src="https://th.bing.com/th/id/R.fa081bb8d0d9e1aa3fdfe39349d64885?rik=ST8BwF2CTCQ9aQ&pid=ImgRaw&r=0">
-            <div class="overlay">
-              <p>LOCATION</p>
-            </div>
-            <div class="belowOverlay">
-              <h3>Mera Peak Climbing</h3>
-              <div>
-                <div>
-                  <p>Duration: 20 Days</p>
-                  <p><span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                        class="fas fa-star"></i><i class="fas fa-star"></i> 30 Reviews</span></p>
-                </div>
-                <div>
-                  <p>Price</p>
-                  <p>US$2690</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="col-md-4 item">
-          <div class="image-container">
-            <img alt="Everest base camp trekking"
-              src="https://th.bing.com/th/id/R.fa081bb8d0d9e1aa3fdfe39349d64885?rik=ST8BwF2CTCQ9aQ&pid=ImgRaw&r=0">
-            <div class="overlay">
-              <p>LOCATION</p>
-            </div>
-            <div class="belowOverlay">
-              <h3>Mera Peak Climbing</h3>
-              <div>
-                <div>
-                  <p>Duration: 20 Days</p>
-                  <p><span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                        class="fas fa-star"></i><i class="fas fa-star"></i> 30 Reviews</span></p>
-                </div>
-                <div>
-                  <p>Price</p>
-                  <p>US$2690</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="col-md-4 item">
-          <div class="image-container">
-            <img alt="Everest base camp trekking"
-              src="https://th.bing.com/th/id/R.fa081bb8d0d9e1aa3fdfe39349d64885?rik=ST8BwF2CTCQ9aQ&pid=ImgRaw&r=0">
-            <div class="overlay">
-              <p>LOCATION</p>
-            </div>
-            <div class="belowOverlay">
-              <h3>Mera Peak Climbing</h3>
-              <div>
-                <div>
-                  <p>Duration: 20 Days</p>
-                  <p><span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                        class="fas fa-star"></i><i class="fas fa-star"></i> 30 Reviews</span></p>
-                </div>
-                <div>
-                  <p>Price</p>
-                  <p>US$2690</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="holidayActivities container">
-      <h2>HOLIDAY ACTIVITIES</h2>
-
-      <div class="trekkingCategory">
-        <div>
-          <img src="https://cdn-icons-png.flaticon.com/512/1974/1974052.png">
-          <p>Trekking in <br>Nepal</p>
-        </div>
-        <div>
-          <img src="https://cdn-icons-png.flaticon.com/512/2808/2808276.png">
-          <p>Climbing in <br>Nepal</p>
-        </div>
-        <div>
-          <img
-            src="https://cdn-icons.flaticon.com/png/512/4559/premium/4559764.png?token=exp=1640272635~hmac=0e5aa12dd725d3301938e717b97e0ff4">
-          <p>Expedition in <br>Nepal</p>
-        </div>
-        <div>
-          <img
-            src="https://cdn-icons.flaticon.com/png/512/3251/premium/3251221.png?token=exp=1640272747~hmac=742b05e0eeb543ca50006f8454f259d1">
-          <p>Jungle Safari in <br>Nepal</p>
-        </div>
-        <div>
-          <img src="https://cdn-icons-png.flaticon.com/512/1591/1591487.png">
-          <p>Rafting in <br>Nepal</p>
-        </div>
-        <div>
-          <img src="https://cdn-icons-png.flaticon.com/512/4093/4093142.png">
-          <p>Day Tours in <br>Nepal</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="common-box service-content-wrapper">
-      <div class="intro-image">
-        <div class="row ">
-          <div class="col-lg-6 ">
-            <div class="image-wrapper"><img data-src="https://www.mountainmonarch.com/themes/images/why.svg"
-                alt="mountain monarch" class="fill lazyloaded"
-                src="https://www.mountainmonarch.com/themes/images/why.svg"></div>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 ms-lg-auto">
-            <div class="service-content common-module mb-lg-0">
-              <div class="title">
-                <h2>Why Choose Us?</h2><span class="sub-title">Unbeatable Adventure Experiences</span>
-              </div>
-              <ul class="service-list">
-                <li class="item safety">
-                  <h4>Safety First: Oxygen on Trek</h4>
-                  <p>Proper Safety Back up with Oxygen Cylinder or Gamow Bag with Comprehensive First Aid Kits
-                    accompanied by experienced medical trained trek leader on each trip.</p>
-                </li>
-                <li class="item responsible">
-                  <h4>Responsible Travel 1 Trekker: 1 Porter</h4>
-                  <p>Responsible adventure policy 1 Trekker: 1 Porter. The most ethical way to hire the porter carrying
-                    less weight. Flexibility on trek to have one’s pace and itinerary adjustment.</p>
-                </li>
-                <li class="item provided">
-                  <h4>Trek and Climbing Gear Provided</h4>
-                  <p>All personal and group climbing gears from the climbing boots to helmet and rope with warm sleeping
-                    bag and down jackets to ensure the hassle free and safe journey.</p>
-                </li>
-                <li class="item csr">
-                  <h4>Not Only Trekking . Our CSR</h4>
-                  <p>Being experts not only we organize the safe &amp; responsible adventure trip, but also aware of our
-                    <strong><a href="">CSR</a></strong> &amp; doing some tangible
-                    social work to bring changes to local people.
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="blog container">
-      <div class="sectionHead">
-        <h2>NEPAL TREKKING</h2>
-      <a>VIEW ALL TREKKING <i class="fas fa-long-arrow-alt-right"></i></a>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div>
-            <img src="https://stingynomads.com/wp-content/uploads/2020/03/Everest-Base-Camp-trek-itinerary.jpg.webp">
-          </div>
-          <div>
-            <h3>Nepal Treks Info</h3>
-            <h2>Everest Base Camp Trek: Complete Guide</h2>
-            <p>Post Date: December 14, 2021</p>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div>
-            <img src="https://stingynomads.com/wp-content/uploads/2020/03/Everest-Base-Camp-trek-itinerary.jpg.webp">
-          </div>
-          <div>
-            <h3>Nepal Treks Info</h3>
-            <h2>Everest Base Camp Trek: Complete Guide</h2>
-            <p>Post Date: December 14, 2021</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="affilation associated">
-      <div class="container">
-        <h2>OUR AFFILATIONS</h2>
-        <ul>
-          <li><img width="128" height="47"
-              data-src="https://www.mountainmonarch.com/themes/images/svg/associated/nepal-goverment.svg" alt="Ng"
-              class="ng ls-is-cached lazyloaded"
-              src="https://www.mountainmonarch.com/themes/images/svg/associated/nepal-goverment.svg"></li>
-          <li><img width="169" height="172"
-              data-src="https://www.mountainmonarch.com/themes/images/svg/associated/ntb.svg" alt="Nta"
-              class="ntb ls-is-cached lazyloaded"
-              src="https://www.mountainmonarch.com/themes/images/svg/associated/ntb.svg"></li>
-          <li><img width="158" height="213"
-              data-src="https://www.mountainmonarch.com/themes/images/svg/associated/taan.svg" alt="Taan"
-              class="taan ls-is-cached lazyloaded"
-              src="https://www.mountainmonarch.com/themes/images/svg/associated/taan.svg"></li>
-          <li><img width="248" height="212"
-              data-src="https://www.mountainmonarch.com/themes/images/svg/associated/nma.svg" alt="Nma"
-              class="nma ls-is-cached lazyloaded"
-              src="https://www.mountainmonarch.com/themes/images/svg/associated/nma.svg"></li>
-          <li><img width="128" height="47"
-              data-src="https://www.mountainmonarch.com/themes/images/svg/associated/nepal-goverment.svg" alt="Ng"
-              class="ng ls-is-cached lazyloaded"
-              src="https://www.mountainmonarch.com/themes/images/svg/associated/nepal-goverment.svg"></li>
-          <li><img width="169" height="172"
-              data-src="https://www.mountainmonarch.com/themes/images/svg/associated/ntb.svg" alt="Nta"
-              class="ntb ls-is-cached lazyloaded"
-              src="https://www.mountainmonarch.com/themes/images/svg/associated/ntb.svg"></li>
-          <li><img width="158" height="213"
-              data-src="https://www.mountainmonarch.com/themes/images/svg/associated/taan.svg" alt="Taan"
-              class="taan ls-is-cached lazyloaded"
-              src="https://www.mountainmonarch.com/themes/images/svg/associated/taan.svg"></li>
-
-        </ul>
-      </div>
-    </section>
-  </main>
-
-  <footer id="footer">
-    <div class="container common-box">
-      <nav class="footer-nav row">
-        <ul class="col-lg-10 mx-auto">
-          <li><a href="/">Home</a></li>
-          <li><a href="">Destinations</a></li>
-          <li><a href="">Nepal Adventures</a></li>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Travel Info</a></li>
-          <li><a href="">Travel Blog</a></li>
-          <li><a href="">Customize Trip</a></li>
-          <li><a href="">Photos</a></li>
-          <li><a href="">Videos</a></li>
-          <li><a href="">Reviews</a></li>
-          <li><a href="">Write a Review</a></li>
-          <li><a href="">Site Map</a></li>
-          <li><a href="">Contact Us</a></li>
-        </ul>
-      </nav>
     </div>
-    <div class="footer-last ">
-      <div class="container">
-        <ul class="row">
-          <li class="col-lg-4 ">
-            <div class="footer_contact">
-              <h3>Contact us</h3>
-              <ul>
-                <li><b>+977 1 4373881</b> (Landline)</li>
-                <li><b>+977 9851079588</b> (Mobile)</li>
-                <li><a href="">info@yourgmail.com</a></li>
-              </ul>
-              <div class="footer_social "><a href="" target="_blank"
-                  rel="nofollow noopener noreferrer"><i class="fab fa-facebook"></i></a><a
-                  href="" target="_blank" rel="nofollow noopener noreferrer"><i
-                    class="fab fa-twitter"></i></a><a href="" target="_blank"
-                  rel="nofollow noopener noreferrer"><i class="fab fa-instagram"></i></a><a
-                  href="" target="_blank"
-                  rel="nofollow noopener noreferrer"><i class="fab fa-youtube"></i></a></div>
+    <!-- End of search section
+       ============================================= -->
+
+    <!-- Start of activity section
+       ============================================= -->
+    <section id="activity-3" class="activity-section-3">
+        <div class="container">
+            <div class="section-title text-center headline title-style-two position-relative">
+                <p class="title-watermark">Activities</p>
+                <span>Best Activities</span>
+                <h2>
+                    Browse Featured Activities
+                </h2>
             </div>
-          </li>
-          <li class="col-lg-4 text-center">
-            <div class="footer_logo"><img width="176" height="74" class=" ls-is-cached lazyloaded"
-                src="/xcoply.jpeg"></div>
-            <div class="copy-right">
-              <p><b>© 2021, <a href="/">Your Company.</a> All Rights Reserved</b></p>
+            <div class="activity-content-3">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="activity-item-card">
+                            <div class="activity-item-img text-center">
+                                <img src="https://images.unsplash.com/photo-1617469165786-8007eda3caa7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+                            </div>
+                            <div class="activity-item-text">
+                                <div class="activity-item-fee clearfix">
+                                    <span>Price:  </span>
+                                    <div class="activity-fee-amount">
+                                        <del>$390</del>
+                                        <strong>$290</strong>
+                                    </div>
+                                </div>
+                                <div class="activity-item-title headline">
+                                    <h3><a href="#">Ellis Island with Ferry</a></h3>
+                                    <div class="activity-features">
+                                        <div class="icon-text">
+                                            <div class="icon"><i class="fas fa-clock"></i></div>5 Days
+                                        </div>
+                                        <div class="icon-text">
+                                            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>London
+                                        </div>
+                                        <div class="icon-text">
+                                            <div class="icon"><i class="fas fa-users"></i></div> Small
+                                        </div>
+                                        <div class="icon-text">
+                                            <div class="icon"><i class="fas fa-running"></i></div> Skip Line
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="activity-item-agent clearfix">
+                                    <div class="activity-agent-img float-left">
+                                        <img src="assets/img/activity/agent2.jpg" alt="">
+                                    </div>
+                                    <div class="activity-agent-text">
+                                        <h4><a href="#">Michael Jack</a></h4>
+                                        <span>Example Agency</span>
+                                    </div>
+                                    <div class="p-activity-btn float-right">
+                                        <a href="#"><i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="activity-item-card">
+                            <div class="activity-item-img text-center">
+                                <img src="https://images.unsplash.com/photo-1617469165786-8007eda3caa7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+                            </div>
+                            <div class="activity-item-text">
+                                <div class="activity-item-fee clearfix">
+                                    <span>Price:  </span>
+                                    <div class="activity-fee-amount">
+                                        <del>$280</del>
+                                        <strong>$220</strong>
+                                    </div>
+                                </div>
+                                <div class="activity-item-title headline">
+                                    <h3>
+                                        <a href="#">
+                                            Rome: Street Food Tour
+                                        </a>
+                                    </h3>
+                                    <div class="activity-features">
+                                        <div class="icon-text">
+                                            <div class="icon"><i class="fas fa-clock"></i></div>5 Days
+                                        </div>
+                                        <div class="icon-text">
+                                            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>London
+                                        </div>
+                                        <div class="icon-text">
+                                            <div class="icon"><i class="fas fa-users"></i></div> Small
+                                        </div>
+                                        <div class="icon-text">
+                                            <div class="icon"><i class="fas fa-running"></i></div> Skip Line
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="activity-item-agent clearfix">
+                                    <div class="activity-agent-img float-left">
+                                        <img src="assets/img/activity/agent2.jpg" alt="">
+                                    </div>
+                                    <div class="activity-agent-text">
+                                        <h4><a href="#">Michael Jack</a></h4>
+                                        <span>Example Agency</span>
+                                    </div>
+                                    <div class="p-activity-btn float-right">
+                                        <a href="#"><i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="activity-item-card">
+                            <div class="activity-item-img text-center">
+                                <img src="https://images.unsplash.com/photo-1617469165786-8007eda3caa7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+                            </div>
+                            <div class="activity-item-text">
+                                <div class="activity-item-fee clearfix">
+                                    <span>Price:  </span>
+                                    <div class="activity-fee-amount">
+                                        <del>$370</del>
+                                        <strong>$310</strong>
+                                    </div>
+                                </div>
+                                <div class="activity-item-title headline">
+                                    <h3><a href="#">Vatican Museum Private</a></h3>
+                                    <div class="activity-features">
+                                        <div class="icon-text">
+                                            <div class="icon"><i class="fas fa-clock"></i></div>5 Days
+                                        </div>
+                                        <div class="icon-text">
+                                            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>London
+                                        </div>
+                                        <div class="icon-text">
+                                            <div class="icon"><i class="fas fa-users"></i></div> Small
+                                        </div>
+                                        <div class="icon-text">
+                                            <div class="icon"><i class="fas fa-running"></i></div> Skip Line
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="activity-item-agent clearfix">
+                                    <div class="activity-agent-img float-left">
+                                        <img src="assets/img/activity/agent2.jpg" alt="">
+                                    </div>
+                                    <div class="activity-agent-text">
+                                        <h4><a href="#">Michael Jack</a></h4>
+                                        <span>Example Agency</span>
+                                    </div>
+                                    <div class="p-activity-btn float-right">
+                                        <a href="#"><i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="activity-item-card">
+                            <div class="activity-item-img text-center">
+                                <img src="https://images.unsplash.com/photo-1617469165786-8007eda3caa7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+                            </div>
+                            <div class="activity-item-text">
+                                <div class="activity-item-fee clearfix">
+                                    <span>Price:  </span>
+                                    <div class="activity-fee-amount">
+                                        <del>$380</del>
+                                        <strong>$190</strong>
+                                    </div>
+                                </div>
+                                <div class="activity-item-title headline">
+                                    <h3><a href="#">Doge Palace Ticket</a></h3>
+                                    <div class="activity-features">
+                                        <div class="icon-text">
+                                            <div class="icon"><i class="fas fa-clock"></i></div>5 Days
+                                        </div>
+                                        <div class="icon-text">
+                                            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>London
+                                        </div>
+                                        <div class="icon-text">
+                                            <div class="icon"><i class="fas fa-users"></i></div> Small
+                                        </div>
+                                        <div class="icon-text">
+                                            <div class="icon"><i class="fas fa-running"></i></div> Skip Line
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="activity-item-agent clearfix">
+                                    <div class="activity-agent-img float-left">
+                                        <img src="assets/img/activity/agent2.jpg" alt="">
+                                    </div>
+                                    <div class="activity-agent-text">
+                                        <h4><a href="#">Michael Jack</a></h4>
+                                        <span>Example Agency</span>
+                                    </div>
+                                    <div class="p-activity-btn float-right">
+                                        <a href="#"><i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="newsletter-btn mt-4"><a href=""
-                class="btn btn-secondary btn-md p-0">Sign up for our weekly newsletter <i class="icon-enter"></i></a>
+        </div>
+    </section>
+    <!-- End of activity section
+       ============================================= -->
+
+    <!-- Start of location section
+       ============================================= -->
+    <section id="destination" class="destination-section">
+        <div class="container">
+            <div class="section-title text-left headline  position-relative">
+                <span>Locations</span>
+                <h2>
+                    Wouldn't you like to be in<br /> the best locations in the world?
+                </h2>
             </div>
-          </li>
-          <li class="col-lg-4 text-end">
-            <div class="pay-online-link ">
-              <h4>we accept</h4><a href=""><span class="icon-wrap"><img
-                    width="276" height="38" class=" ls-is-cached lazyloaded"
-                    data-src="https://www.mountainmonarch.com/themes/images/svg/payment/pay-cards01.svg" alt="pay card"
-                    src="https://www.mountainmonarch.com/themes/images/svg/payment/pay-cards01.svg"></span></a>
+            <div class="location-slide-content">
+                <div id="destination-slider" class="location-slide-area owl-carousel">
+                    <div class="destination-single">
+                        <div class="destination-img">
+                            <img src="https://images.unsplash.com/photo-1529316058072-4cdf93b52741?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+                            <div class="destination-content">
+                                <div class="content-left">
+                                    <h5>Paris</h5>
+                                    <small>From 8 Jun 2021</small>
+                                </div>
+                                <div class="content-right">
+                                    <h5>$639</h5>
+                                    <span>Per Day</span>
+                                </div>
+                            </div>
+                            <div class="destination-btn">
+                                <a href="#">2 Activities</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="destination-single">
+                        <div class="destination-img">
+                            <img src="https://images.unsplash.com/photo-1529316058072-4cdf93b52741?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+                            <div class="destination-content">
+                                <div class="content-left">
+                                    <h5>Rome</h5>
+                                    <small>From 8 Jun 2021</small>
+                                </div>
+                                <div class="content-right">
+                                    <h5>$749</h5>
+                                    <span>Per Day</span>
+                                </div>
+                            </div>
+                            <div class="destination-btn">
+                                <a href="#">2 Activities</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="destination-single">
+                        <div class="destination-img">
+                            <img src="https://images.unsplash.com/photo-1529316058072-4cdf93b52741?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+                            <div class="destination-content">
+                                <div class="content-left">
+                                    <h5>Venice</h5>
+                                    <small>From 8 Jun 2021</small>
+                                </div>
+                                <div class="content-right">
+                                    <h5>$265</h5>
+                                    <span>Per Day</span>
+                                </div>
+                            </div>
+                            <div class="destination-btn">
+                                <a href="#">2 Activities</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="destination-single">
+                        <div class="destination-img">
+                            <img src="https://images.unsplash.com/photo-1529316058072-4cdf93b52741?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+                            <div class="destination-content">
+                                <div class="content-left">
+                                    <h5>Amsterdam</h5>
+                                    <small>From 8 Jun 2021</small>
+                                </div>
+                                <div class="content-right">
+                                    <h5>$868</h5>
+                                    <span>Per Day</span>
+                                </div>
+                            </div>
+                            <div class="destination-btn">
+                                <a href="#">2 Activities</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="destination-single">
+                        <div class="destination-img">
+                            <img src="https://images.unsplash.com/photo-1529316058072-4cdf93b52741?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+                            <div class="destination-content">
+                                <div class="content-left">
+                                    <h5>Dubai</h5>
+                                    <small>From 8 Jun 2021</small>
+                                </div>
+                                <div class="content-right">
+                                    <h5>$426</h5>
+                                    <span>Per Day</span>
+                                </div>
+                            </div>
+                            <div class="destination-btn">
+                                <a href="#">2 Activities</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="destination-single">
+                        <div class="destination-img">
+                            <img src="https://images.unsplash.com/photo-1529316058072-4cdf93b52741?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+                            <div class="destination-content">
+                                <div class="content-left">
+                                    <h5>Madrid</h5>
+                                    <small>From 8 Jun 2021</small>
+                                </div>
+                                <div class="content-right">
+                                    <h5>$168</h5>
+                                    <span>Per Day</span>
+                                </div>
+                            </div>
+                            <div class="destination-btn">
+                                <a href="#">2 Activities</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p>All contents, photos, videos, and infographics in this website are copyright by Your Company. </p>
-            <span>Crafted by <a href="" target="_blank"
-                rel="nofollow noopener noreferrer"><span>.........</p></a></span>
-          </li>
-        </ul>
-      </div>
+        </div>
+    </section>
+    <!-- End of location section
+       ============================================= -->
+
+    <!-- Start of activity section
+       ============================================= -->
+    <section id="featured-activities" class="featured-activity-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-title headline">
+                        <span>Most Viewed Activities</span>
+                        <h2>
+                            Some of the activities that our customers frequently look at.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row location-content list-bunch image-grid">
+                <div class="col-xl-6 col-md-3 col-sm-6 mb-30 image-grid-item">
+                    <div class="activity-card style-two d-flex">
+                        <div class="activity-img position-relative">
+                            <span class="price-badge">$120</span>
+                            <img src="https://th.bing.com/th/id/OIP.LDxy5QhoBhLIFOnZiWm2_wHaEo?pid=ImgDet&rs=1" alt="">
+                            <span class="activity-hover-icon"><a href="#"><i class="fas fa-heart"></i></a></span>
+                        </div>
+                        <div class="activity-text">
+                            <div class="activity-tilte-head headline ul-li">
+                                <h3>
+                                    <a href="#">
+                                        Vatican Museum Private Tour
+                                    </a>
+                                </h3>
+                                <div class="activity-features">
+                                    <div class="icon-text">
+                                        <div class="icon"><i class="fas fa-clock"></i></div>5 Days
+                                    </div>
+                                    <div class="icon-text">
+                                        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>London
+                                    </div>
+                                    <div class="icon-text">
+                                        <div class="icon"><i class="fas fa-users"></i></div> Small
+                                    </div>
+                                    <div class="icon-text">
+                                        <div class="icon"><i class="fas fa-running"></i></div> Skip Line
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="activity-agent clearfix">
+                                <div class="activity-agent-img float-left">
+                                    <img src="https://th.bing.com/th/id/OIP.LDxy5QhoBhLIFOnZiWm2_wHaEo?pid=ImgDet&rs=1" alt="">
+                                </div>
+                                <div class="activity-agent-text">
+                                    <h4><a href="#">Michael Jack</a></h4>
+                                    <span>Example Agency</span>
+                                </div>
+                                <div class="activity-btn btn-2 float-right">
+                                    <a href="#">Detail <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-3 col-sm-6 mb-30 image-grid-item">
+                    <div class="activity-card style-two d-flex">
+                        <div class="activity-img position-relative">
+                            <span class="price-badge">$120</span>
+                            <img src="https://th.bing.com/th/id/OIP.LDxy5QhoBhLIFOnZiWm2_wHaEo?pid=ImgDet&rs=1" alt="">
+                            <span class="activity-hover-icon"><a href="#"><i class="fas fa-heart"></i></a></span>
+                        </div>
+                        <div class="activity-text">
+                            <div class="activity-tilte-head headline ul-li">
+                                <h3>
+                                    <a href="#">
+                                        Doge Palace Private Ticket
+                                    </a>
+                                </h3>
+                                <div class="activity-features">
+                                    <div class="icon-text">
+                                        <div class="icon"><i class="fas fa-clock"></i></div>45 Mins
+                                    </div>
+                                    <div class="icon-text">
+                                        <div class="icon"><i class="fa fa-map-marker-alt"></i></div>Italy
+                                    </div>
+                                    <div class="icon-text">
+                                        <div class="icon"><i class="fas fa-car"></i></div>Pickup
+                                    </div>
+                                    <div class="icon-text">
+                                        <div class="icon"><i class="fas fa-headphones"></i></div>Guide
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="activity-agent clearfix">
+                                <div class="activity-agent-img float-left">
+                                    <img src="https://th.bing.com/th/id/OIP.LDxy5QhoBhLIFOnZiWm2_wHaEo?pid=ImgDet&rs=1" alt="">
+                                </div>
+                                <div class="activity-agent-text">
+                                    <h4><a href="#">Michael Jack</a></h4>
+                                    <span>Example Agency</span>
+                                </div>
+                                <div class="activity-btn btn-2 float-right">
+                                    <a href="#">Detail <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-3 col-sm-6 mb-30 image-grid-item">
+                    <div class="activity-card style-two d-flex">
+                        <div class="activity-img position-relative">
+                            <span class="price-badge">$120</span>
+                            <img src="https://th.bing.com/th/id/OIP.LDxy5QhoBhLIFOnZiWm2_wHaEo?pid=ImgDet&rs=1" alt="">
+                            <span class="activity-hover-icon"><a href="#"><i class="fas fa-heart"></i></a></span>
+                        </div>
+                        <div class="activity-text">
+                            <div class="activity-tilte-head headline ul-li">
+                                <h3>
+                                    <a href="#">
+                                        Ellis Island with Ferry
+                                    </a>
+                                </h3>
+                                <div class="activity-features">
+                                    <div class="icon-text">
+                                        <div class="icon"><i class="fas fa-clock"></i></div>45 Mins
+                                    </div>
+                                    <div class="icon-text">
+                                        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>Italy
+                                    </div>
+                                    <div class="icon-text">
+                                        <div class="icon"><i class="fas fa-car"></i></div>Pickup
+                                    </div>
+                                    <div class="icon-text">
+                                        <div class="icon"><i class="fas fa-headphones"></i></div>Guide
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="activity-agent clearfix">
+                                <div class="activity-agent-img float-left">
+                                    <img src="https://th.bing.com/th/id/OIP.LDxy5QhoBhLIFOnZiWm2_wHaEo?pid=ImgDet&rs=1" alt="">
+                                </div>
+                                <div class="activity-agent-text">
+                                    <h4><a href="#">Michael Jack</a></h4>
+                                    <span>Example Agency</span>
+                                </div>
+                                <div class="activity-btn btn-2 float-right">
+                                    <a href="#">Detail <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-3 col-sm-6 mb-30 image-grid-item">
+                    <div class="activity-card style-two d-flex">
+                        <div class="activity-img position-relative">
+                            <span class="price-badge">$120</span>
+                            <img src="https://th.bing.com/th/id/OIP.LDxy5QhoBhLIFOnZiWm2_wHaEo?pid=ImgDet&rs=1" alt="">
+                            <span class="activity-hover-icon"><a href="#"><i class="fas fa-heart"></i></a></span>
+                        </div>
+                        <div class="activity-text">
+                            <div class="activity-tilte-head headline ul-li">
+                                <h3>
+                                    <a href="#">
+                                        Rome: Street Food Tour
+                                    </a>
+                                </h3>
+                                <div class="activity-features">
+                                    <div class="icon-text">
+                                        <div class="icon"><i class="fas fa-clock"></i></div>45 Mins
+                                    </div>
+                                    <div class="icon-text">
+                                        <div class="icon"><i class="fas fa-map"></i></div>Italy
+                                    </div>
+                                    <div class="icon-text">
+                                        <div class="icon"><i class="fas fa-car"></i></div>Pickup
+                                    </div>
+                                    <div class="icon-text">
+                                        <div class="icon"><i class="fas fa-headphones"></i></div>Guide
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="activity-agent clearfix">
+                                <div class="activity-agent-img float-left">
+                                    <img src="https://th.bing.com/th/id/OIP.LDxy5QhoBhLIFOnZiWm2_wHaEo?pid=ImgDet&rs=1" alt="">
+                                </div>
+                                <div class="activity-agent-text">
+                                    <h4><a href="#">Michael Jack</a></h4>
+                                    <span>Example Agency</span>
+                                </div>
+                                <div class="activity-btn btn-2 float-right">
+                                    <a href="#">Detail <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of activity section
+       ============================================= -->
+
+    <!-- Start of category section
+       ============================================= -->
+    <section id="category-2" class="category-section-2">
+        <div class="container">
+            <div class="section-title text-center headline title-style-two position-relative">
+                <p class="title-watermark">Categories</p>
+                <span>Top Categories</span>
+                <h2>
+                    Browse By Category
+                </h2>
+            </div>
+            <div class="category-content-2">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="category-innerbox-2 text-center">
+                            <div class="category-icon">
+                               <img src="https://cdn-icons.flaticon.com/png/512/3660/premium/3660781.png?token=exp=1640506839~hmac=46e1c721b5c1c6d21571d0423d987bdc">
+                            </div>
+                            <div class="category-text headline">
+                                <h3><a href="#">Attraction</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
+                        <div class="category-innerbox-2 text-center">
+                            <div class="category-icon">
+                              <img src="https://cdn-icons.flaticon.com/png/512/2484/premium/2484169.png?token=exp=1640507563~hmac=02be0d11db6209828ae6b86bd644d2b1">
+                            </div>
+                            <div class="category-text headline">
+                                <h3><a href="#">Caravan</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                        <div class="category-innerbox-2 text-center">
+                            <div class="category-icon">
+                               <img src="https://cdn-icons.flaticon.com/png/512/805/premium/805473.png?token=exp=1640507654~hmac=b7492c1c7332bec814d4bbe8a7b23c67">
+                            </div>
+                            <div class="category-text headline">
+                                <h3><a href="#">Diving</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="category-innerbox-2 text-center">
+                            <div class="category-icon">
+                              <img src="https://cdn-icons.flaticon.com/png/512/3412/premium/3412718.png?token=exp=1640507970~hmac=91962f35a94f15e7e0726475058d24cd">
+                            </div>
+                            <div class="category-text headline">
+                                <h3><a href="#">Cruise</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+                        <div class="category-innerbox-2 text-center">
+                            <div class="category-icon">
+                             <img src="https://cdn-icons-png.flaticon.com/512/2994/2994609.png">
+                            </div>
+                            <div class="category-text headline">
+                                <h3><a href="#">City Travel</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1500ms">
+                        <div class="category-innerbox-2 text-center">
+                            <div class="category-icon">
+                              <img src="https://cdn-icons.flaticon.com/png/512/566/premium/566651.png?token=exp=1640508080~hmac=2414944cc604f0ea28b6b800556b27e0">
+                            </div>
+                            <div class="category-text headline">
+                                <h3><a href="#">Food Drinks</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+                        <div class="category-innerbox-2 text-center">
+                            <div class="category-icon">
+                             <img src="https://cdn-icons-png.flaticon.com/512/3175/3175199.png">
+                            </div>
+                            <div class="category-text headline">
+                                <h3><a href="#">Beach</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="700ms" data-wow-duration="1500ms">
+                        <div class="category-innerbox-2 text-center">
+                            <div class="category-icon">
+                              <img src="https://cdn-icons.flaticon.com/png/512/2079/premium/2079177.png?token=exp=1640508177~hmac=4a3487842d919665adf67a95b301f41e">
+                            </div>
+                            <div class="category-text headline">
+                                <h3><a href="#">Camping</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of category section
+       ============================================= -->
+    <!-- Start of Tour Type section
+       ============================================= -->
+    <section id="activity-featured" class="activity-featured-section bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-title headline">
+                        <span> Newest Activities</span>
+                        <h2>
+                            Check out the latest activities added to our directory
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="activity-featured-content">
+                <div id="activity-featured-slider-2" class="activity-featured-slide owl-carousel">
+                    <div class="activity-item-card">
+                        <div class="activity-item-img text-center">
+                            <img src="https://images.unsplash.com/photo-1617469165786-8007eda3caa7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+                        </div>
+                        <div class="activity-item-text">
+                            <div class="activity-item-fee">
+                                <span>Price:  </span>
+                                <div class="activity-fee-amount">
+                                    <del>$490</del>
+                                    <strong>$240</strong>
+                                </div>
+                            </div>
+                            <div class="activity-item-title headline">
+                                <h3>
+                                    <a href="#">Amsterdam Canal Cruise</a>
+                                </h3>
+                                <div class="activity-meta">
+                                    <a href="#"><i class="far fa-clock"></i>5 Days</a>
+                                    <a href="#"><i class="fas fa-map-marker-alt"></i> Italy</a>
+                                </div>
+                            </div>
+                            <div class="activity-item-agent clearfix">
+                                <div class="activity-agent-img float-left">
+                                    <img src="assets/img/activity/agent2.jpg" alt="">
+                                </div>
+                                <div class="activity-agent-text">
+                                    <h4><a href="#">Michael Jack</a></h4>
+                                    <span>Example Agency</span>
+                                </div>
+                                <div class="p-activity-btn float-right">
+                                    <a href="#"><i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="activity-item-card">
+                        <div class="activity-item-img text-center">
+                            <img src="https://images.unsplash.com/photo-1617469165786-8007eda3caa7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+                        </div>
+                        <div class="activity-item-text">
+                            <div class="activity-item-fee">
+                                <span>Price:  </span>
+                                <div class="activity-fee-amount">
+                                    <del>$380</del>
+                                    <strong>$190</strong>
+                                </div>
+                            </div>
+                            <div class="activity-item-title headline">
+                                <h3>
+                                    <a href="#">Louvre Museum Ticket</a>
+                                </h3>
+                                <div class="activity-meta">
+                                    <a href="#"><i class="far fa-clock"></i>5 Days</a>
+                                    <a href="#"><i class="fas fa-map-marker-alt"></i> Italy</a>
+                                </div>
+                            </div>
+                            <div class="activity-item-agent clearfix">
+                                <div class="activity-agent-img float-left">
+                                    <img src="assets/img/activity/agent2.jpg" alt="">
+                                </div>
+                                <div class="activity-agent-text">
+                                    <h4><a href="#">Michael Jack</a></h4>
+                                    <span>Example Agency</span>
+                                </div>
+                                <div class="p-activity-btn float-right">
+                                    <a href="#"><i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="activity-item-card">
+                        <div class="activity-item-img text-center">
+                            <img src="https://images.unsplash.com/photo-1617469165786-8007eda3caa7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+                        </div>
+                        <div class="activity-item-text">
+                            <div class="activity-item-fee">
+                                <span>Price:  </span>
+                                <div class="activity-fee-amount">
+                                    <del>$160</del>
+                                    <strong>$120</strong>
+                                </div>
+                            </div>
+                            <div class="activity-item-title headline">
+                                <h3>
+                                    <a href="#">Eiffel Tower Ticket</a>
+                                </h3>
+                                <div class="activity-meta">
+                                    <a href="#"><i class="far fa-clock"></i>5 Days</a>
+                                    <a href="#"><i class="fas fa-map-marker-alt"></i> Italy</a>
+                                </div>
+                            </div>
+                            <div class="activity-item-agent clearfix">
+                                <div class="activity-agent-img float-left">
+                                    <img src="assets/img/activity/agent2.jpg" alt="">
+                                </div>
+                                <div class="activity-agent-text">
+                                    <h4><a href="#">Michael Jack</a></h4>
+                                    <span>Example Agency</span>
+                                </div>
+                                <div class="p-activity-btn float-right">
+                                    <a href="#"><i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="activity-item-card">
+                        <div class="activity-item-img text-center">
+                            <img src="https://images.unsplash.com/photo-1617469165786-8007eda3caa7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+                        </div>
+                        <div class="activity-item-text">
+                            <div class="activity-item-fee">
+                                <span>Price:  </span>
+                                <div class="activity-fee-amount">
+                                    <del>$260</del>
+                                    <strong>$180</strong>
+                                </div>
+                            </div>
+                            <div class="activity-item-title headline">
+                                <h3>
+                                    <a href="#">Ellis Island with Ferry</a>
+                                </h3>
+                                <div class="activity-meta">
+                                    <a href="#"><i class="far fa-clock"></i>5 Days</a>
+                                    <a href="#"><i class="fas fa-map-marker-alt"></i> Italy</a>
+                                </div>
+                            </div>
+                            <div class="activity-item-agent clearfix">
+                                <div class="activity-agent-img float-left">
+                                    <img src="assets/img/activity/agent2.jpg" alt="">
+                                </div>
+                                <div class="activity-agent-text">
+                                    <h4><a href="#">Michael Jack</a></h4>
+                                    <span>Example Agency</span>
+                                </div>
+                                <div class="p-activity-btn float-right">
+                                    <a href="#"><i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="activity-item-card">
+                        <div class="activity-item-img text-center">
+                            <img src="https://images.unsplash.com/photo-1617469165786-8007eda3caa7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+                        </div>
+                        <div class="activity-item-text">
+                            <div class="activity-item-fee">
+                                <span>Price:  </span>
+                                <div class="activity-fee-amount">
+                                    <del>$390</del>
+                                    <strong>$290</strong>
+                                </div>
+                            </div>
+                            <div class="activity-item-title headline">
+                                <h3>
+                                    <a href="#">Barcelona: Bike Tour</a>
+                                </h3>
+                                <div class="activity-meta">
+                                    <a href="#"><i class="far fa-clock"></i>5 Days</a>
+                                    <a href="#"><i class="fas fa-map-marker-alt"></i> Italy</a>
+                                </div>
+                            </div>
+                            <div class="activity-item-agent clearfix">
+                                <div class="activity-agent-img float-left">
+                                    <img src="assets/img/activity/agent2.jpg" alt="">
+                                </div>
+                                <div class="activity-agent-text">
+                                    <h4><a href="#">Michael Jack</a></h4>
+                                    <span>Example Agency</span>
+                                </div>
+                                <div class="p-activity-btn float-right">
+                                    <a href="#"><i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="activity-item-card">
+                        <div class="activity-item-img text-center">
+                            <img src="https://images.unsplash.com/photo-1617469165786-8007eda3caa7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+                        </div>
+                        <div class="activity-item-text">
+                            <div class="activity-item-fee">
+                                <span>Price:  </span>
+                                <div class="activity-fee-amount">
+                                    <del>$790</del>
+                                    <strong>$590</strong>
+                                </div>
+                            </div>
+                            <div class="activity-item-title headline">
+                                <h3>
+                                    <a href="#">Sagrada Familia Ticket</a>
+                                </h3>
+                                <div class="activity-meta">
+                                    <a href="#"><i class="far fa-clock"></i>5 Days</a>
+                                    <a href="#"><i class="fas fa-map-marker-alt"></i> Italy</a>
+                                </div>
+                            </div>
+                            <div class="activity-item-agent clearfix">
+                                <div class="activity-agent-img float-left">
+                                    <img src="assets/img/activity/agent2.jpg" alt="">
+                                </div>
+                                <div class="activity-agent-text">
+                                    <h4><a href="#">Michael Jack</a></h4>
+                                    <span>Example Agency</span>
+                                </div>
+                                <div class="p-activity-btn float-right">
+                                    <a href="#"><i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="activity-featured-btn text-center">
+                    <a href="#">All Activities <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of ActivityType section
+       ============================================= -->
+    <!-- Start of testimonial section 2
+       ============================================= -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-title text-center headline title-style-two position-relative">
+                <p class="title-watermark">Testimonials</p>
+                <span>Testimonials </span>
+                <h2>
+                    Our customers have a lot to say about our services.
+                </h2>
+            </div>
+            <div class="testimonials-slider owl-theme owl-carousel">
+                <div class="col-lg-12 testimonial-block">
+                    <div class="inner-box">
+                        <div class="author-info">
+                            <div class="thumb"><img src="https://cdn-icons.flaticon.com/png/512/1144/premium/1144709.png?token=exp=1640508308~hmac=52f3ed262d9f1990ae5fd25376f3dec7" alt=""></div>
+                            <h4>Elizabeth Theme</h4>
+                            <div class="location">California, USA</div>
+                        </div>
+                        <div class="content">
+                            <div class="rating-info">
+                                <h5>Excellent Service</h5>
+                                <div class="rating">
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                </div>
+                            </div>
+                            <div class="text">Dolor sitam consectetur sed adipisicing <br> eiusmod tempor cididunt laboret dolors <br>  magn aliquat enim sed minim veniam eu <br> nostrud lorem ipsum dolor.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 testimonial-block">
+                    <div class="inner-box">
+                        <div class="author-info">
+                            <div class="thumb"><img src="https://cdn-icons.flaticon.com/png/512/1144/premium/1144709.png?token=exp=1640508308~hmac=52f3ed262d9f1990ae5fd25376f3dec7" alt=""></div>
+                            <h4>James Thomas</h4>
+                            <div class="location">California, USA</div>
+                        </div>
+                        <div class="content">
+                            <div class="rating-info">
+                                <h5>Best Guide Ever</h5>
+                                <div class="rating">
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                </div>
+                            </div>
+                            <div class="text">Dolor sitam consectetur sed adipisicing <br> eiusmod tempor cididunt laboret dolors <br>  magn aliquat enim sed minim veniam eu <br> nostrud lorem ipsum dolor.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 testimonial-block">
+                    <div class="inner-box">
+                        <div class="author-info">
+                            <div class="thumb"><img src="https://cdn-icons.flaticon.com/png/512/1144/premium/1144709.png?token=exp=1640508308~hmac=52f3ed262d9f1990ae5fd25376f3dec7" alt=""></div>
+                            <h4>Mike Hanry</h4>
+                            <div class="location">California, USA</div>
+                        </div>
+                        <div class="content">
+                            <div class="rating-info">
+                                <h5>Best Experience</h5>
+                                <div class="rating">
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                </div>
+                            </div>
+                            <div class="text">Dolor sitam consectetur sed adipisicing <br> eiusmod tempor cididunt laboret dolors <br>  magn aliquat enim sed minim veniam eu <br> nostrud lorem ipsum dolor.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of testimonial section 2
+    ============================================= -->
+    <!-- Start of agent section
+       ============================================= -->
+    <section id="agent" class="agent-section-2">
+        <div class="container">
+            <div class="section-title text-left headline  position-relative">
+                <span>Our Teams</span>
+                <h2>
+                    Meet Our Professional Team<br /> To Guide You Best
+                </h2>
+            </div>
+            <div class="agent-slide-content">
+                <div id="agent-slider" class="agent-slide-area owl-carousel">
+                    <div class="agent-img-text text-center position-relative wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="agent-img position-relative">
+                            <img src="https://cdn-icons.flaticon.com/png/512/1144/premium/1144709.png?token=exp=1640508308~hmac=52f3ed262d9f1990ae5fd25376f3dec7" alt="">
+                            <ul class="team-social">
+                                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="agent-text headline position-relative">
+                            <h3><a href="#">Hanry Frenk</a></h3>
+                            <span class="agent-title">Tour Guide</span>
+                            <span class="agent-has">60 Activities</span>
+                        </div>
+                    </div>
+                    <div class="agent-img-text text-center position-relative wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                        <div class="agent-img position-relative">
+                            <img src="https://cdn-icons.flaticon.com/png/512/1144/premium/1144709.png?token=exp=1640508308~hmac=52f3ed262d9f1990ae5fd25376f3dec7" alt="">
+                            <ul class="team-social">
+                                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                            </ul>
+
+                        </div>
+                        <div class="agent-text headline position-relative">
+                            <h3><a href="#">Fred Mercury</a></h3>
+                            <span class="agent-title">Tour Guide</span>
+                            <span class="agent-has">60 Activities</span>
+                        </div>
+                    </div>
+                    <div class="agent-img-text text-center position-relative wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+                        <div class="agent-img position-relative">
+                            <img src="https://cdn-icons.flaticon.com/png/512/1144/premium/1144709.png?token=exp=1640508308~hmac=52f3ed262d9f1990ae5fd25376f3dec7" alt="">
+                            <ul class="team-social">
+                                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="agent-text headline position-relative">
+                            <h3><a href="#">Brian Mullen</a></h3>
+                            <span class="agent-title">Tour Guide</span>
+                            <span class="agent-has">60 Activities</span>
+                        </div>
+                    </div>
+                    <div class="agent-img-text text-center position-relative wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+                        <div class="agent-img position-relative">
+                            <img src="https://cdn-icons.flaticon.com/png/512/1144/premium/1144709.png?token=exp=1640508308~hmac=52f3ed262d9f1990ae5fd25376f3dec7" alt="">
+                            <ul class="team-social">
+                                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="agent-text headline position-relative">
+                            <h3><a href="#">Anita May</a></h3>
+                            <span class="agent-title">Tour Guide</span>
+                            <span class="agent-has">60 Activities</span>
+                        </div>
+                    </div>
+                    <div class="agent-img-text text-center position-relative">
+                        <div class="agent-img position-relative">
+                            <img src="https://cdn-icons.flaticon.com/png/512/1144/premium/1144709.png?token=exp=1640508308~hmac=52f3ed262d9f1990ae5fd25376f3dec7" alt="">
+                            <ul class="team-social">
+                                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="agent-text headline position-relative">
+                            <h3><a href="#">Robert Rich</a></h3>
+                            <span class="agent-title">Tour Guide</span>
+                            <span class="agent-has">60 Activities</span>
+                        </div>
+                    </div>
+                    <div class="agent-img-text text-center position-relative">
+                        <div class="agent-img position-relative">
+                            <img src="https://cdn-icons.flaticon.com/png/512/1144/premium/1144709.png?token=exp=1640508308~hmac=52f3ed262d9f1990ae5fd25376f3dec7" alt="">
+                        </div>
+                        <div class="agent-text headline position-relative">
+                            <h3><a href="#">Anna Tully</a></h3>
+                            <span class="agent-title">Tour Guide</span>
+                            <span class="agent-has">60 Activities</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of agent section
+       ============================================= -->
+    <!-- Start of Footer  section
+       ============================================= -->
+    <footer class="footer-section style-two pt-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="footer-item">
+                        <div class="footer-logo">
+                            <div class="top">
+                                <a class="logo" href="index.html">
+                                    <a href="#"><img src="./xcoply.jpeg" alt=""></a>
+                                </a>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet perspiciatis sit voluptas quae</p>
+                                <ul>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <i class="fab fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- <div class="bottom">
+                                <ul>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <i class="fab fa-instagram"></i>
+                                            <img src="assets/img/instagram/instagram-1.jpg" alt="Instagram">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <i class="fab fa-instagram"></i>
+                                            <img src="assets/img/instagram/instagram-2.jpg" alt="Instagram">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <i class="fab fa-instagram"></i>
+                                            <img src="assets/img/instagram/instagram-3.jpg" alt="Instagram">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="footer-item">
+                        <div class="footer-links">
+                            <h3>Quick Links</h3>
+                            <div class="top">
+                                <div class="left">
+                                    <ul>
+                                        <li>
+                                            <a href="about.html">About Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="services.html">Our Services</a>
+                                        </li>
+                                        <li>
+                                            <a href="activities.html">Activities</a>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="right">
+                                    <ul>
+                                        <li>
+                                            <a href="blog.html">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Buy Tour</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sell Your Activity</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Destinations</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <h4>Popular Search</h4>
+                                <ul>
+                                    <li>
+                                        <a href="#">Nature</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Attraction</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Culture</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Sightseeing</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Discovery</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="footer-item">
+                        <div class="footer-blog">
+                            <h3>Blog And News</h3>
+                            <div class="inner">
+                                <ul class="align-items-center">
+                                    <li>
+                                        <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/04/Kathmandu-Fun-Valley.jpg" alt="Blog">
+                                    </li>
+                                    <li>
+                                        <a href="#">3 things guides should pay attention to</a>
+                                        <span>01 June 2021</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="inner">
+                                <ul class="align-items-center">
+                                    <li>
+                                        <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0a/db/66/b7.jpg" alt="Blog">
+                                    </li>
+                                    <li>
+                                        <a href="#">How to become the best travel agency?</a>
+                                        <span>02 June 2021</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="inner">
+                                <ul class="align-items-center">
+                                    <li>
+                                        <img src="data:image/jpeg;base64,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" alt="Blog">
+                                    </li>
+                                    <li>
+                                        <a href="#">About The Louvre Museum</a>
+                                        <span>03 June 2021</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="footer-item">
+                        <div class="footer-contact">
+                            <h3>Contact Information</h3>
+                            <div class="top">
+                                <ul>
+                                    <li>
+                                        <i class="flaticon-maps-and-flags"></i>
+                                        <a href="#">1489 New road, Kathmandu</a>
+                                        <span>Meet Us In Office</span>
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-phone"></i>
+                                        <a href="#">(0123) 456 7890</a>
+                                        <span>Make a Call</span>
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-mail-3"></i>
+                                        <a href="mailto:info@example.com">info@example.com</a>
+                                        <span>Drop Us A Line</span>
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-clock-2"></i>
+                                        <p>9 AM - 5 PM (Sun-Fri)</p>
+                                        <span>Office Hour</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-area">
+                <p>Copyright <i class="bx bx-copyright"></i>2021 Goo Travel. Designed By <a href="#" target="_blank">Ongoing Themes</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer section
+       ============================================= -->
+    <!-- Login-Sign Form -->
+    <div class="modal login-modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header position-relative" data-background="assets/img/banner/lg-bg.jpg">
+                    <div class="login-head text-center pera-content">
+                        <p>Lacinia at quis risus sed. Tempus egestas sed sed risus pretium quam vulputate dignissim.</p>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-signup-login-tab">
+                        <div class="tab-pane-btn ul-li">
+                            <ul id="tabs" class="nav text-center nav-tabs tab-pane-btn-area">
+                                <li class="nav-item"><a href="#" data-target="#login" data-toggle="tab" class="nav-link text-capitalize active"><i class="far fa-user"></i> Login</a></li>
+                                <li class="nav-item"><a href="#" data-target="#signUp" data-toggle="tab" class="nav-link text-capitalize"><i class="fa fa-key"></i> Sign Up</a></li>
+                            </ul>
+                        </div>
+                        <div id="tabsContent" class="tab-content">
+                            <div id="login" class="tab-pane fade active show">
+                                <div class="login-content pera-content text-center">
+                                    <form action="#" method="post">
+                                        <input type="text" placeholder="Username or email">
+                                        <input type="text" placeholder="Password">
+                                        <div class="login-label clearfix">
+                                            <span><input type="checkbox">Remember me</span>
+                                            <a href="#">Forget Password?</a>
+                                        </div>
+                                        <button type="submit">Submit</button>
+                                    </form>
+                                    <p>Don’t have any account? <a href="#">Signup</a></p>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <button type="submit" class="btn btn-fb btn-block"><i class="fab fa-facebook-f float-left"></i> Log In via Facebook</button>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <button type="submit" class="btn btn-googl btn-block"><i class="fab fa-google float-left"></i> Log In via Google+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="signUp" class="tab-pane fade">
+                                <div class="sign-up-content pera-content text-center">
+                                    <form action="#" method="post">
+                                        <input type="text" placeholder="First Name">
+                                        <input type="text" placeholder="Last Name">
+                                        <input type="email" placeholder="Email address">
+                                        <input type="text" placeholder="Username">
+                                        <input type="text" placeholder="Password">
+                                        <input type="text" placeholder="Confirm password">
+                                        <div class="login-label clearfix">
+                                            <span><input type="checkbox">By clicking signup you are agree to our terms of service</span>
+                                        </div>
+                                        <button type="submit">Submit</button>
+                                    </form>
+                                    <p>Already have an account? <a href="#">Log in</a></p>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <button type="submit" class="btn btn-fb btn-block"><i class="fab fa-facebook-f float-left"></i> Sign up via Facebook</button>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <button type="submit" class="btn btn-googl btn-block"><i class="fab fa-google float-left"></i> Sign up via Google+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </footer>
-
-
-
-  <!-- Optional JavaScript; choose one of the two! -->
-
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-
-  <!-- Option 2: Separate Popper and Bootstrap JS -->
-  <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script>
-    $('.owl-carousel').owlCarousel({
-      loop: true,
-      margin: 10,
-      responsiveClass: true,
-      responsive: {
-        0: {
-          items: 1,
-          nav: true
-        },
-        600: {
-          items: 2,
-          nav: false
-        },
-        1000: {
-          items: 3,
-          nav: true,
-          loop: false
-        }
-      }
-    })
-
-    $("#readMore").on("click", function(){
-    $(this).parent().children('.moreDescription').toggleClass('d-none');
-});
-
-  </script>
+    <!-- JS library -->
+    <script src="./vendorScript.js"></script>
 </body>
-
-</html>
-
-
-
-
-
+      </html>   
