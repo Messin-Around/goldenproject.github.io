@@ -210,7 +210,7 @@ input:focus {
   transition: 0.5s; }
   .btn.trns-btn, .btn.btn-trans {
     color: #e53935;
-    border: 1px solid #e53935; }
+    border: 1px solid #fff; }
     .btn.trns-btn:hover, .btn.btn-trans:hover {
       background: #e53935;
       color: #fff; }
@@ -589,7 +589,7 @@ color: #000000; }
   .navbar-custom .bottom-nav .navbar-header .navbar-brand {
     padding: 0px; }
     .navbar-custom .bottom-nav .navbar-header .navbar-brand img {
-      width: 216px; }
+      width: 142px; }
   .navbar-custom .bottom-nav .navbar-nav {
     float: right; }
     .navbar-custom .bottom-nav .navbar-nav li.dropdown:hover .dropdown-menu {
