@@ -398,7 +398,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
   border-top-color: #EEEEEE; }
-
+.about-text .card-body {
+  background: #fff;
+  padding: 12px;
+  border-radius: 2px;
+  color: #505050;
+}
+.about-text .card-body label {
+  margin: 8px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 600;
+}
 /* ==========================================================================
     2.1 General / Common
    ========================================================================== */
@@ -850,9 +861,19 @@ color: #000000; }
   .about-us .about-text p:last-child {
     margin-bottom: 0px; }
 .about-us .about-text a {
-  padding: 8px 16px;
-  margin-top: 25px; }
-
+  padding: 6px 12px;
+  margin-top: 25px;
+  background: rgba(12,25,195,.9);
+  color: #fff;
+  font-size: 14px;
+  border-radius: 4px;
+  margin-left: 12px; }
+.trackSecond>input {
+  border: 1px solid darkgray;
+  border-radius: 6px;
+  min-height: 32px;
+  width: 75%;
+}
 .abt-page {
   background: #f8f8f8;
   position: relative;
