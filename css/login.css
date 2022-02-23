@@ -270,6 +270,14 @@
     margin-bottom: 32px;
     color: rgba(12,25,195,.9);
     font-weight: 600;
+  } 
+  .userLogin form label.d-flex span  {
+      display: inline-block;
+  }
+  .userLogin form input[type="checkbox"] {
+    width: initial;
+    box-shadow: none;
+    min-height: initial;
   }
   .userLogin form span {
     font-size: 14px;
