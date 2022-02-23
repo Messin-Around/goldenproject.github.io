@@ -585,7 +585,7 @@ color: #000000; }
 .navbar-custom .bottom-nav {
   transition: 0.5s;
   padding: 15px 0;
-  background: #fff; }
+  background: rgba(12,25,195,.9); }
   .navbar-custom .bottom-nav .navbar-header .navbar-brand {
     padding: 0px; }
     .navbar-custom .bottom-nav .navbar-header .navbar-brand img {
@@ -596,7 +596,9 @@ color: #000000; }
       opacity: 1;
       display: block; }
     .navbar-custom .bottom-nav .navbar-nav li.active a {
-      color: #e53935; }
+      color: #e53935;
+      font-size: 16px;
+      font-weight: bold; }
     .navbar-custom .bottom-nav .navbar-nav li .label {
       margin-top: -6px;
       vertical-align: medium;
@@ -609,7 +611,7 @@ color: #000000; }
     .navbar-custom .bottom-nav .navbar-nav li a {
       background: transparent;
       text-transform: uppercase;
-      color: #383838;
+      color: #fff;
       font-family: 'montserrat';
       font-weight: 400;
       font-size: 14px;
