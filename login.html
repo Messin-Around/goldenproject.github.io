@@ -21,6 +21,404 @@
 	ga('create', 'UA-91615293-2', 'auto');
 	ga('send', 'pageview');
 	</script>
+
+    <style>
+        :root{
+  --primary: rgba(0,0,255,.8 );
+}
+.mr-auto.navbar-nav {
+  margin-left: auto;
+}
+.w-100 {
+  width: 100%;
+  max-width: 100% !important; 
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.Hero video {
+  filter: brightness(0.5);
+}
+.gradiantPrimary {
+  background: var(--primary);
+}
+.gradiantPrimary a {
+  color: #fff;
+}
+.floatingHero {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+}
+.floatingHero .col-md-6>img {
+  max-width: 212px;
+}
+.floatingHero>.row {
+  max-width: 80%;
+  margin: auto;
+}
+.floatingHero h1 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 60px;
+  letter-spacing: 4px;
+  font-weight: 800;
+  line-height: 1;
+}
+.floatingHero h3 {
+  background: var(--primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 42px;
+  font-weight: 700;
+  margin: 12px 0;
+}
+.heroBtn a {
+  background: var(--primary);
+  width: 136px;
+  text-align: center;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff !important;
+  font-weight: 500;
+  border-radius: 25px;
+  margin-right: 12px;
+}
+.heroBtn a:last-child {
+  width: auto;
+  background: none;
+  border: 2px solid #32cd32;
+  padding: 0 12px;
+}
+.heroBtn {
+  display: flex;
+  align-items: center;
+}
+.categoryWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 62px 0;
+}
+.singleCategory {
+  display: flex;
+  align-items: flex-start;
+  margin-right: 26px;
+}
+.singleCategory img {
+  width: 34px;
+  margin-right: 12px;
+}
+.floatingSocial_icons {
+  position: absolute;
+  bottom: 0;
+  right: 52px;
+}
+.floatingSocial_icons ul {
+  list-style: none;
+}
+.floatingSocial_icons ul li {
+  margin: 32px 0;
+}
+.floatingSocial_icons ul li:last-child {
+  height: 132px;
+  width: 2px;
+  border-radius: 12px;
+  background: #fff;
+  margin: 10px;
+}
+.floatingSocial_icons ul li img:hover {
+  transition: all .8s ease;
+ width: 82%;
+}
+.slick-slide img {
+ width: 100%;
+}
+.slick-slide h3 {
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  margin: 12px 0;
+}
+.slick-slide a {
+  background: var(--primary);
+  width: 136px;
+  text-align: center;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff !important;
+  font-weight: 500;
+  border-radius: 25px;
+  margin:auto;
+}
+.slick-dots {
+ bottom: -52px;
+}
+.slick-dots li button:before {
+  font-size: 8px;
+}
+.slick-dots li.slick-active button:before {
+  color: #32cd32;
+  font-size: 12px;
+}
+
+li.slick-active {
+  color: #32cd32 !important;
+}
+li.slick-active::before {
+  background: #32cd32;
+  color: #32cd32 !important;
+}
+.slick-next:before, .slick-prev:before {
+  color: #32cd32;
+}
+.slick-next, .slick-prev {
+  top: 35% !important;
+}
+.description {
+  background-position: left bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: url(./img/pattern.png) #060b1e;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    margin: 92px 0;
+    padding: 72px 0;
+}
+
+.description h1 {
+  background: var(--primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 52px;
+    font-weight: 700;
+    margin: 12px 0;
+}
+.description p {
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: .7px;
+}
+.footerTop {
+  background: var(--primary);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 42px;
+  color: #fff;
+}
+.footerTop ul {
+  list-style: none;
+  padding:0;
+  padding-top: 12px;
+}
+.footerTop ul li {
+  padding: 5px 0;
+  letter-spacing: .7px;
+}
+.footerEnd .content {
+  text-align: center;
+  color: #000;
+  background: #ccc;
+  padding: 12px;
+}
+.footerEnd .content a {
+  background: var(--primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.footerSection {
+  margin-top: 92px;
+}
+.userLogin {
+  background: #f0f0f0;
+  padding: 82px;
+}
+.userLogin .col-md-6 {
+  margin: auto;
+  background: #fff;
+  padding: 22px;
+  border-radius: 8px;
+}
+.userLogin form {
+  display: flex;
+  flex-direction: column;
+}
+.userLogin .col-md-6>div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.userLogin form>a {
+  background: var(--primary);
+  width: 80%;
+  text-align: center;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff !important;
+  font-weight: 500;
+  border-radius: 25px;
+  margin: auto;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  letter-spacing: .8px;
+}
+.userLogin .col-md-6 h3 {
+  margin-bottom: 32px;
+}
+.userLogin form span {
+  font-size: 14px;
+  margin-bottom: 12px;
+  display: block;
+  font-weight: 500;
+}
+.userLogin form label {
+  margin-bottom: 18px;
+}
+.userLogin form input {
+  border: 0;
+  box-shadow: black 0px 0px 7px -2px;
+  border-radius: 8px;
+}
+.userLogin .col-md-6>div a {
+  background: var(--primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 18px;
+  font-weight: 500;
+}
+.userLogin .col-md-6>div p {
+  font-weight: 500;
+}
+.locationsCovered {
+  display: flex;
+  align-items: center;
+  margin-top: 82px !important;
+  padding: 32px !important;
+  padding-bottom: 0;
+}
+.locationsCovered>div {
+  margin-right: 32px !important;
+  display: block;
+  font-weight: 500;
+  letter-spacing: .6px;
+}
+.locationsCovered h3 {
+  margin-right: 12px;
+}
+.mr-3 {
+  margin-right: 12px;
+}
+.d-flex.form-label a {
+  background: var(--primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 16px;
+  font-weight: 500;
+}
+.featuredSection h1 {
+  margin-bottom: 32px;
+}
+div.banner {
+  position: relative;
+  margin: 82px 0;
+}
+div.banner .bannerFloating_des {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  text-align: right;
+  padding-right: 52px;
+  color: #fff;
+  letter-spacing: .7px;
+}
+div.banner .bannerFloating_des>div {
+  display: flex;
+  justify-content: space-between;
+  width: 28%;
+  margin-left: auto;
+  margin-right: 15%;
+  margin-top: 42px;
+}
+.partners {
+  background: #ccc;
+  padding: 112px 0;
+}
+.partners h1{
+  text-align: center;
+  margin-bottom: 52px;
+}
+.blogWrapper img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 18px;
+}
+.blogWrapper .container>h3 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 22px;
+  color: darkslategray;
+}
+.blogWrapper .container>h1 {
+  text-align: center;
+}
+.singleBlog h4 {
+  letter-spacing: .8px;
+}
+.singleBlog>div>div {
+  letter-spacing: .7px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.singleBlog>div p {
+  font-weight: 600;
+}
+.singleBlog>div a {
+  background: var(--primary);
+  width: 136px;
+  text-align: center;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff !important;
+  font-weight: 500;
+  border-radius: 25px;
+}
+
+
+
+
+
+    </style>
 </head>
 <body>
 	<!-- navbar -->
@@ -148,7 +546,52 @@
 	</nav>
 	<!-- End navabr -->
 
-	
+    <div className='userLogin'>
+        <Container>
+            <Row>
+                <Col md={6}>
+                    <h3>Customer Login</h3>
+                     <Form>
+                         <Label>
+                             <span>E-Mail Address / Mobile Number
+                              </span>
+                              <Input type='text'/>
+                         </Label>
+                         <Label>
+                             <span>Password
+                              </span>
+                              <Input type='password'/>
+                         </Label>
+                         <a>LOGIN</a>
+                     </Form>
+                     <div>
+                         <a>Forgot Password</a>
+                         <p>New to site?<a href='./register'> Register</a></p>
+                     </div>
+                </Col>
+            </Row>
+
+            <Row>
+                <Col md="12" className='locationsCovered'>
+                   <h3>Cities we got covered:</h3>
+                   <div>
+                       <img src={Map} width={32} />
+                       <span>Kathmandu</span>
+                   </div>
+                   <div>
+                       <img src={Map} width={32} />
+                       <span>Lalitpur</span>
+                   </div>
+                   <div>
+                       <img src={Map} width={32} />
+                       <span>Bhaktapur</span>
+                   </div>
+                </Col>
+            </Row>
+        </Container>
+     </div>
+
+
 	<!-- footer widget-->
 	<div class="footer-widget section-pad">
 		<div class="container">
