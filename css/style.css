@@ -596,7 +596,7 @@ color: #000000; }
       opacity: 1;
       display: block; }
     .navbar-custom .bottom-nav .navbar-nav li.active a {
-      color: rgba(12,25,195,.9);
+      color: #fff;
       font-size: 16px;
       font-weight: bold; }
     .navbar-custom .bottom-nav .navbar-nav li .label {
@@ -629,11 +629,12 @@ color: #000000; }
           top: 50px;
           left: 0; }
       .navbar-custom .bottom-nav .navbar-nav li a:hover, .navbar-custom .bottom-nav .navbar-nav li a:focus {
-        color: rgba(12,25,195,.9);
-        background: transparent; }
+        color: #fff;
+        background: transparent;
+      text-decoration: underline; }
       .navbar-custom .bottom-nav .navbar-nav li a.btn-quote {
         margin-left: 12px;
-        color: rgba(12,25,195,.9);
+        color: #fff;
         line-height: 18px;
         font-weight: 600; }
         .navbar-custom .bottom-nav .navbar-nav li a.btn-quote:hover {
