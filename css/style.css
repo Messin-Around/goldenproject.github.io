@@ -1433,28 +1433,39 @@ color: #777777;
 .testimonial .carousel {
   margin-top: 40px; }
   .testimonial .carousel .item .testimonial-text {
-    box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.1);
+   
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     border-radius: 5px;
-    padding: 60px;
-    padding-bottom: 12px;
+    padding: 12px;
+    padding-top: 62px;
     margin: 6px;
     position: relative;
     color: #000000;
     opacity: 1;
     font-style: italic;
-    line-height: 22px; }
+    line-height: 22px;}
     .testimonial .carousel .item .testimonial-text:before {
       content: "";
       position: absolute;
       top: 12px;
-      left: 58px;
-      width: 36px;
-      height: 36px;
-      background: url("../image/icon-qoute.png") no-repeat;
-      background-size: 36px auto; }
+      left: 12px;
+      width: 22px;
+      height: 22px;
+      background: url(../image/icon-qoute.png) no-repeat;
+      background-size: 22px auto;
+    }
+    .testimonial.no-dots .item{
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: flex-start;
+      box-shadow: 0px 1px 12px rgb(0 0 0 / 10%);
+      padding: 22px;
+    }
+    .testimonial.no-dots .carousel-inner {
+      padding:6px;
+    }
     .affilatesWrapper {
       display: flex;
       align-items: center;
@@ -1474,13 +1485,25 @@ box-sizing: border-box;
 border-radius: 5px;
 padding: 14px 28px;
     }
+    .testimonial-text>p {
+      font-style: initial;
+      font-size: 14px;
+      letter-spacing: .4px;
+    }
+    .testimonial-text>div>h5 {
+      font-size: 18px;
+    }
+    .testimonial-text>div>h6 {
+      font-size: 15px;
+    }
     .testimonial .carousel .item .profile img {
-      width: 65px;
+      width: 122px;
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
       -ms-border-radius: 5px;
-      border-radius: 5px;
-      margin-right: 12px;
+      border-radius: 50%;
+      margin-right: 52px;
+      display: block;
      }
      .testimonial-text .profile {
        display: flex;
@@ -3323,4 +3346,31 @@ form label.error {
   border-bottom-left-radius: 4px;
   border: 2px solid rgba(12,25,195,.9);
   z-index: 999;
+}
+.panel-heading .accordion-toggle:after {
+  /* symbol for "opening" panels */
+  font-family: 'Glyphicons Halflings'; /* essential for enabling glyphicon */
+  content: "\e114"; /* adjust as needed, taken from bootstrap.css */
+  float: right; /* adjust as needed */
+  color: grey; /* adjust as needed */
+  }
+  .panel-heading .accordion-toggle.collapsed:after {
+  /* symbol for "collapsed" panels */
+  content: "\e080"; /* adjust as needed, taken from bootstrap.css */
+  }
+.videoContainer {
+  display:flex;
+  justify-content:space-between;
+}  
+.videoContainer>div {
+ max-width:50%;
+ margin-right:auto;
+}
+.videoContainer video {
+  max-width:100%;
+  position:absolute;
+  z-index:-1;
+}
+#accordion {
+  text-align:left;
 }
